@@ -1,4 +1,4 @@
-namespace RecipeVault.ViewPartial;
+namespace RecipeVault.ViewPartials;
 
 public partial class Sidebar : ContentView
 {

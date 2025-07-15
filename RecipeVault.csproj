@@ -83,28 +83,40 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="ViewModel\" />
-	</ItemGroup>
-
-	<ItemGroup>
+	  <Compile Update="Resources\Styles\CustomStyles.xaml.cs">
+	    <DependentUpon>CustomStyles.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Resources\Styles\SidebarItemHighlight.xaml.cs">
 	    <DependentUpon>SidebarItemHighlight.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="View\Searchbar.xaml.cs">
+	  <Compile Update="ViewPartials\Searchbar.xaml.cs">
 	    <DependentUpon>Searchbar.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Resources\Styles\ButtonHoverStyle.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\CustomStyles.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Resources\Styles\SidebarItemHighlight.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewPartial\Sidebar.xaml">
+	  <MauiXaml Update="Resources\Styles\Sizes.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\Searchbar.xaml">
+	  <MauiXaml Update="ViewPartials\Sidebar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ViewPartials\Searchbar.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Views\Components\" />
 	</ItemGroup>
 
 </Project>
