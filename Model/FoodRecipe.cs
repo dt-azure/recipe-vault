@@ -8,6 +8,6 @@ namespace RecipeVault.Model
 {
     public class FoodRecipe : Recipe
     {
-        public FoodRecipe(string name, string desc, DateTime createdDate, DateTime lastModifiedDate, int servingSize, int prepTime, int cookTime, Difficulty difficulty) : base(name, desc, createdDate, lastModifiedDate, servingSize, prepTime, cookTime, difficulty) { }
+        public FoodRecipe(string name, string desc, DateTime createdDate, DateTime lastModifiedDate, int servingSize, int prepTime, int cookTime, Difficulty difficulty) : base(name, desc, servingSize, prepTime, cookTime, difficulty) { }
     }
 }

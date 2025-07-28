@@ -1,4 +1,4 @@
-namespace RecipeVault.View;
+namespace RecipeVault.ViewPartials;
 
 public partial class RecipeCard : ContentView
 {

@@ -87,10 +87,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="ViewModel\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <Compile Update="Resources\Styles\SidebarItemHighlight.xaml.cs">
 	    <DependentUpon>SidebarItemHighlight.xaml</DependentUpon>
 	  </Compile>

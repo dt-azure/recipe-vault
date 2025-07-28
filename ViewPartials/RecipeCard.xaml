@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RecipeVault.View.RecipeCard"
+             x:Class="RecipeVault.ViewPartials.RecipeCard"
              xmlns:models="clr-namespace:RecipeVault.Model"
              x:DataType="models:Recipe">
     <Border StrokeShape="RoundRectangle 10"
@@ -40,7 +40,7 @@
                     </Image>
 
                     <Label Text="{Binding Difficulty}"
-                           Style=""
+                           
                            TextColor="Black"
                            VerticalOptions="Center"/>
                 </HorizontalStackLayout>
@@ -51,13 +51,13 @@
                            HeightRequest="16"
                            WidthRequest="16"></Image>
                     <Label Text="{Binding CookTime}"
-                           Style=""
+                           
                            TextColor="Black"
                            VerticalOptions="Center"/>
                 </HorizontalStackLayout>
             </Grid>
             <Label Text="{Binding Description}"
-                   Style=""
+                   
                    TextColor="Black"
                    LineBreakMode="TailTruncation"
                    MaxLines="2"
