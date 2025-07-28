@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecipeVault.View.RecipeCard"
+             xmlns:models="clr-namespace:RecipeVault.Model"
+             x:DataType="models:Recipe">
+    <Border StrokeShape="RoundRectangle 10"
+            Stroke="{StaticResource Gray200}"
+            StrokeThickness="1"
+            Padding="10"
+            Margin="5"
+            BackgroundColor="White">
+        <VerticalStackLayout Spacing="5">
+            <Image Source="{Binding Gallery[0].Source}"
+                   Aspect="AspectFill"
+                   HeightRequest="150"
+                   WidthRequest="200"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Margin="0,0,0,5">
+                <Image.Clip>
+                    <RoundRectangleGeometry CornerRadius="8" Rect="0,0,200,150"/>
+                </Image.Clip>
+            </Image>
+
+            <Label Text="{Binding Name}" 
+                   Style="{StaticResource Headline}"
+                   FontAttributes="Bold"
+                   LineBreakMode="TailTruncation"
+                   MaxLines="2"
+                   Margin="0,0,0,2"/>
+
+            <Grid ColumnDefinitions="*,*"
+                  RowSpacing="2"
+                  ColumnSpacing="5">
+                <HorizontalStackLayout Grid.Column="0" Spacing="5">
+                    <Image Source="level_slider_icon.png"
+                           HeightRequest="16"
+                           WidthRequest="16">
+                    </Image>
+
+                    <Label Text="{Binding Difficulty}"
+                           Style=""
+                           TextColor="Black"
+                           VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Grid.Column="1"
+                                       Spacing="5">
+                    <Image Source="timer_icon.png"
+                           HeightRequest="16"
+                           WidthRequest="16"></Image>
+                    <Label Text="{Binding CookTime}"
+                           Style=""
+                           TextColor="Black"
+                           VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </Grid>
+            <Label Text="{Binding Description}"
+                   Style=""
+                   TextColor="Black"
+                   LineBreakMode="TailTruncation"
+                   MaxLines="2"
+                   Margin="0,5,0,0"/>
+        </VerticalStackLayout>
+    </Border>
+</ContentView>

@@ -45,8 +45,10 @@
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 		<MauiImage Include="Resources\Icons\app_icon.svg" />
+		<MauiImage Include="Resources\Icons\level_slider_icon.svg" />
 		<MauiImage Include="Resources\Icons\list_view_icon.svg" />
 		<MauiImage Include="Resources\Icons\setting_icon.svg" />
+		<MauiImage Include="Resources\Icons\timer_icon.svg" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -63,9 +65,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Icons\level_slider_icon.svg" />
 	  <None Remove="Resources\Icons\list_view_icon.svg" />
 	  <None Remove="Resources\Icons\menu_icon.svg" />
 	  <None Remove="Resources\Icons\setting_icon.svg" />
+	  <None Remove="Resources\Icons\timer_icon.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -90,6 +94,9 @@
 	  <Compile Update="Resources\Styles\SidebarItemHighlight.xaml.cs">
 	    <DependentUpon>SidebarItemHighlight.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="ViewPartial\RecipeCard.xaml.cs">
+	    <DependentUpon>RecipeCard.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="View\Searchbar.xaml.cs">
 	    <DependentUpon>Searchbar.xaml</DependentUpon>
 	  </Compile>
@@ -99,7 +106,13 @@
 	  <MauiXaml Update="Resources\Styles\SidebarItemHighlight.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ViewPartial\RecipeArea.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ViewPartial\Sidebar.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewPartial\RecipeCard.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\Searchbar.xaml">

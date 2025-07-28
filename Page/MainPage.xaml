@@ -11,7 +11,8 @@
                 <Label Text="Search bar" TextColor="Black" Grid.Row="0" BackgroundColor="White"/>
                 <Label Text="Filter/Sort" TextColor="Black" Grid.Row="1" BackgroundColor="White"/>
                 <Label Text="Recipes" TextColor="Black" Grid.Row="2" Style="{StaticResource Headline}"/>
-                <Label Text="Content" TextColor="Black" Grid.Row="3" BackgroundColor="White"/>
+
+                <partial:RecipeArea Grid.Row="3"/>
             </Grid>
         </Grid>
     </ScrollView>
