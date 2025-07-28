@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:partial="clr-namespace:RecipeVault.ViewPartials"
+             xmlns:vm="clr-namespace:RecipeVault.ViewModels"
+             x:Class="RecipeVault.MainPage"
+             x:DataType="vm:MainPageViewModel">
+
+    <ScrollView BackgroundColor="White">
+        <Grid ColumnDefinitions="Auto, *">
+            <partial:Sidebar Grid.Column="0" />
+            <Grid RowDefinitions="Auto,Auto,Auto,*" 
+                  Padding="20,0,20,0" 
+                  Grid.Column="1" 
+                  BackgroundColor="{StaticResource Gray100}" 
+                  RowSpacing="20">
+                <Border Grid.Row="0" 
+                        Style="{StaticResource RoundedBorder1}">
+                    <partial:Searchbar BindingContext="{Binding SearchbarViewModel}"/>
+                </Border>
+
+                <Border Grid.Row="1" 
+                        Style="{StaticResource RoundedBorder1}">
+                    <Label Text="Filter/Sort" TextColor="Black" Grid.Row="1" BackgroundColor="White"/>
+                </Border>
+                
+                <Label Text="Recipes" TextColor="Black" Grid.Row="2" Style="{StaticResource Headline}"/>
+
+                <Border Grid.Row="3" 
+                        Style="{StaticResource RoundedBorder1}">
+                    <Label Text="Filter/Sort" TextColor="Black" Grid.Row="1" BackgroundColor="White"/>
+                </Border>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>

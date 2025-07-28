@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecipeVault.ViewPartials.Searchbar"
+             xmlns:vm="clr-namespace:RecipeVault.ViewModels"
+             x:DataType="vm:SearchbarViewModel">
+    <Grid ColumnDefinitions="*,Auto" 
+          Padding="15">
+        <Entry Placeholder="Enter keywords you want to look for"
+           Text="{Binding SearchQuery}" 
+           ClearButtonVisibility="WhileEditing"
+           Margin="0,0,5,0"/>
+        <Button Grid.Column="1" 
+            Text="Search" 
+            Style="{StaticResource ButtonHover}" 
+            FontAttributes="Bold"
+            FontSize="16"/>
+    </Grid>
+</ContentView>
