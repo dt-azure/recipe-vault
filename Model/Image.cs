@@ -18,5 +18,7 @@ namespace RecipeVault.Model
         }
 
         public Image(string name) : this(name, "") { }
+
+        public Image() { }
     }
 }

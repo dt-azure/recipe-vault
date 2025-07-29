@@ -16,5 +16,7 @@ namespace RecipeVault.Model
         }
 
         public TagCategory(string name, Color color) : this(name, "", color) { }
+
+        public TagCategory() { }
     }
 }

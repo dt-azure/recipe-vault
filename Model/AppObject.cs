@@ -18,5 +18,7 @@ namespace RecipeVault.Model
             Name = name;
             Description = desc;
         }
+
+        public AppObject() { }
     }
 }

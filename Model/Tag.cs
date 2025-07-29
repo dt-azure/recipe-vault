@@ -8,7 +8,14 @@ namespace RecipeVault.Model
 {
     public class Tag : AppObject
     {
-        public Tag(string name, string desc) : base(name, desc) { }
-        public Tag(string name) : base(name) { }
+        public TagColor TagColor { get; }
+
+        public Tag(string name, string desc, TagColor color) : base(name, desc)
+        {
+            TagColor = color;
+        }
+        public Tag(string name, TagColor color) : this(name, string.Empty, color) { }
+
+        public Tag() { }
     }
 }
