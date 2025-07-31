@@ -4,7 +4,7 @@
              x:Class="RecipeVault.ViewPartials.RecipeArea"
              xmlns:partial="clr-namespace:RecipeVault.ViewPartials"
              xmlns:model="clr-namespace:RecipeVault.Model">
-    <CollectionView ItemsSource="{Binding}">
+    <CollectionView ItemsSource="{Binding Recipes}">
         <CollectionView.ItemsLayout>
             <GridItemsLayout Orientation="Vertical" Span="3"/>
         </CollectionView.ItemsLayout>

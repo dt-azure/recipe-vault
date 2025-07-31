@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace RecipeVault.Model
 {
+    [JsonDerivedType(typeof(FoodRecipe))]   //Help with deserialization
+    [JsonDerivedType(typeof(DrinkRecipe))]
     public abstract class Recipe : AppObject
     {
         public string DateCreated { get; set; }

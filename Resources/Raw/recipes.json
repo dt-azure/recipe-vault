@@ -1,0 +1,2006 @@
+[
+  {
+    "$type": "FoodRecipe",
+    "FoodType": "MainCourse",
+    "CuisineType": "None",
+    "IsVegetarian": false,
+    "IsVegan": false,
+    "SpiceLevel": "Mild",
+    "DateCreated": "01-Aug-25 12:09:26 AM",
+    "DateLastModified": "01-Aug-25 12:09:26 AM",
+    "Tags": [
+      {
+        "TagColor": "Orange",
+        "Id": "07514f7c-040b-451a-9950-dadf09845775",
+        "Name": "beef",
+        "Description": ""
+      },
+      {
+        "TagColor": "Brown",
+        "Id": "16240a22-758c-49f6-8050-a868b2127ebd",
+        "Name": "stew",
+        "Description": ""
+      }
+    ],
+    "Ingredients": [
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Pound",
+        "Quantity": 1,
+        "Note": "cut into bite-size pieces",
+        "Id": "e5848bd3-4074-4540-9e06-9a2d7687a229",
+        "Name": "beef",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 2,
+        "Note": "",
+        "Id": "3b8c1eae-afa5-40af-b5f6-b40065256c99",
+        "Name": "all-purpose flour",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 1.5,
+        "Note": "",
+        "Id": "4af2d453-a31a-4555-9768-1b7a94d21780",
+        "Name": "salt",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 0.25,
+        "Note": "",
+        "Id": "cddf4c53-5c05-4dd9-b3bd-7df081ac24c9",
+        "Name": "ground black pepper",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 0.375,
+        "Note": "optional",
+        "Id": "68cd97ea-65b0-4935-a165-48b446dae71c",
+        "Name": "dried thyme",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 2,
+        "Note": "",
+        "Id": "91df41c2-2c10-4fbd-9137-d9ff3eed6903",
+        "Name": "vegetable oil",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 2.5,
+        "Note": "",
+        "Id": "525c1fd2-929d-4e66-bb3f-9c7a2a47c893",
+        "Name": "apple cider",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 4,
+        "Note": "sliced",
+        "Id": "b0b54461-0b95-4df6-a1ae-a05e29a891d2",
+        "Name": "carrot",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 3,
+        "Note": "chopped",
+        "Id": "2adf0d9b-b7fe-4f8f-bac8-fec5d18363ae",
+        "Name": "potato",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 2,
+        "Note": "cored and chopped",
+        "Id": "b9a2880a-7135-40cb-bc9a-ac4499290485",
+        "Name": "small Fuji apple",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Cup",
+        "Quantity": 1,
+        "Note": "chopped",
+        "Id": "f318c493-6219-4c4c-ad92-418ace9c450b",
+        "Name": "onion",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 2,
+        "Note": "",
+        "Id": "124305cb-e329-40f9-b1c1-eb6410beba05",
+        "Name": "water",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 1,
+        "Note": "optional, chopped",
+        "Id": "e6b11713-1f74-4575-9a4b-b15419c447b4",
+        "Name": "celery",
+        "Description": ""
+      }
+    ],
+    "ServingSize": 4,
+    "PrepTime": 1500,
+    "CookTime": 5700,
+    "Difficulty": "Beginner",
+    "Gallery": [],
+    "Hidden": false,
+    "Instructions": [
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "beef",
+            "MeasuringUnit": "Pound",
+            "Quantity": 1
+          },
+          {
+            "Name": "all-purpose flour",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 2
+          },
+          {
+            "Name": "salt",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 0.5
+          },
+          {
+            "Name": "ground black pepper",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 0.25
+          },
+          {
+            "Name": "dried thyme",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 0.125
+          }
+        ],
+        "Details": "Combine beef with flour, salt, black pepper, and thyme in a bowl; toss to coat evenly.",
+        "Id": "b3536e1d-9617-435f-aaac-58044ec9d745",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "vegetable oil",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 2
+          }
+        ],
+        "Details": "Heat oil in a heavy-bottomed pot. Add beef; cook until browned, 5 to 7 minutes. Stir in apple cider with a wooden spoon while scraping the browned bits of food off the bottom of the pan; reduce heat to medium low, and simmer until beef is tender, about 1 hour.",
+        "Id": "57504e8c-1892-4c73-93fa-e6729518610c",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "carrot",
+            "MeasuringUnit": "None",
+            "Quantity": 4
+          },
+          {
+            "Name": "potato",
+            "MeasuringUnit": "None",
+            "Quantity": 3
+          },
+          {
+            "Name": "small Fuji apple",
+            "MeasuringUnit": "None",
+            "Quantity": 2
+          },
+          {
+            "Name": "onion",
+            "MeasuringUnit": "Cup",
+            "Quantity": 1
+          },
+          {
+            "Name": "water",
+            "MeasuringUnit": "Cup",
+            "Quantity": 2
+          },
+          {
+            "Name": "celery",
+            "MeasuringUnit": "None",
+            "Quantity": 1
+          }
+        ],
+        "Details": "Add carrots, potatoes, apples, onion, water, celery, salt, and teaspoon thyme to the pot; continue cooking until vegetables are tender, about 30 minutes more.",
+        "Id": "9a4174e1-5612-4714-9f3b-0bdb9cfa92b1",
+        "Name": "",
+        "Description": ""
+      }
+    ],
+    "Id": "5fb9bd6e-8309-4795-b023-5f106929d8b9",
+    "Name": "Apple Cider Beef Stew",
+    "Description": "This is a warm, naturally sweet, fall stew with beef and apples that was inspired by my mother-in-law. I make this for my husband and I, and save half for another meal. We\u0027ve found that it tastes even better the second day!"
+  },
+  {
+    "$type": "FoodRecipe",
+    "FoodType": "MainCourse",
+    "CuisineType": "Filipino",
+    "IsVegetarian": false,
+    "IsVegan": false,
+    "SpiceLevel": "None",
+    "DateCreated": "01-Aug-25 12:09:26 AM",
+    "DateLastModified": "01-Aug-25 12:09:26 AM",
+    "Tags": [
+      {
+        "TagColor": "Blue",
+        "Id": "35a04e44-d0e7-48fb-b3a2-514cecbf23b8",
+        "Name": "chicken",
+        "Description": ""
+      },
+      {
+        "TagColor": "Brown",
+        "Id": "16240a22-758c-49f6-8050-a868b2127ebd",
+        "Name": "stew",
+        "Description": ""
+      }
+    ],
+    "Ingredients": [
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Tablespoon",
+        "Quantity": 2,
+        "Note": "",
+        "Id": "adb63afd-81d7-4296-8744-c795bd20bb91",
+        "Name": "olive oil",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 2,
+        "Note": "crushed",
+        "Id": "875f2d49-41b8-4933-87d1-579e1e5380af",
+        "Name": "onion",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "Clove",
+        "Quantity": 1.5,
+        "Note": "",
+        "Id": "bd4c77b7-3bcb-4530-9c74-6fc387dcc855",
+        "Name": "garlic",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 1,
+        "Note": "peeled and thinly sliced",
+        "Id": "4b7753ef-8920-4cd8-ab15-6c62271d8219",
+        "Name": "ginger",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Pound",
+        "Quantity": 2.25,
+        "Note": "split and tips discarded",
+        "Id": "28e648ce-c826-4ccf-9aa1-705d46601b06",
+        "Name": "chicken wings",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Tablespoon",
+        "Quantity": 2,
+        "Note": "optional",
+        "Id": "5bbbbe48-1ced-46ac-91d9-3f4f3793fae3",
+        "Name": "fish sauce",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 5.25,
+        "Note": "",
+        "Id": "5cec32d3-c707-4725-8002-4e29ad3a6ad9",
+        "Name": "chicken broth",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Cup",
+        "Quantity": 1,
+        "Note": "",
+        "Id": "ee6e0cf8-cc7a-4a54-a3c5-b346a6f796ff",
+        "Name": "glutinous sweet rice",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Imprecise",
+        "MeasuringUnit": "ToTaste",
+        "Quantity": 0,
+        "Note": "",
+        "Id": "b474feb0-88e2-4232-8863-e93a7bc7b973",
+        "Name": "salt and pepper",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 1,
+        "Note": "",
+        "Id": "2f2f7a50-78e1-4216-bc03-e2ab0329291a",
+        "Name": "green onion",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 1,
+        "Note": "optional, sliced",
+        "Id": "d00d3db1-c062-493e-91fc-cf9221a5e3ca",
+        "Name": "lemon",
+        "Description": ""
+      }
+    ],
+    "ServingSize": 5,
+    "PrepTime": 1200,
+    "CookTime": 1200,
+    "Difficulty": "Beginner",
+    "Gallery": [],
+    "Hidden": false,
+    "Instructions": [
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "olive oil",
+            "MeasuringUnit": "Tablespoon",
+            "Quantity": 2
+          },
+          {
+            "Name": "onion",
+            "MeasuringUnit": "None",
+            "Quantity": 2
+          },
+          {
+            "Name": "garlic",
+            "MeasuringUnit": "Clove",
+            "Quantity": 0.5
+          },
+          {
+            "Name": "ginger",
+            "MeasuringUnit": "None",
+            "Quantity": 1
+          }
+        ],
+        "Details": "Heat oil in a large pot over medium heat. Cook and stir onion, garlic, and ginger in hot oil until fragrant, about 5 minutes.",
+        "Id": "60afef4e-58fc-4a72-8b8e-c4ad01d3255f",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "chicken wings",
+            "MeasuringUnit": "Pound",
+            "Quantity": 2.25
+          }
+        ],
+        "Details": "Add chicken wings; cook and stir for 1 minute. Stir in fish sauce, cover, and cook another 2 minutes.",
+        "Id": "d625aee1-f20f-46f9-bfc4-ffa8495d6101",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "chicken broth",
+            "MeasuringUnit": "Cup",
+            "Quantity": 5.25
+          },
+          {
+            "Name": "glutinous sweet rice",
+            "MeasuringUnit": "Cup",
+            "Quantity": 1
+          }
+        ],
+        "Details": "Pour chicken broth into the pot. Stir in sweet rice and bring mixture to a boil. Cover and cook for 10 minutes, stirring occasionally to prevent rice from sticking to the bottom of the pot.",
+        "Id": "860afaf9-900c-466e-8c58-4abbb13ea4bc",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "salt and pepper",
+            "MeasuringUnit": "ToTaste",
+            "Quantity": 0
+          },
+          {
+            "Name": "green onion",
+            "MeasuringUnit": "None",
+            "Quantity": 1
+          }
+        ],
+        "Details": "Season with salt and pepper. Portion soup into bowls and garnish with green onion.",
+        "Id": "26168dd7-5275-46f4-8cfe-3ee204a5d78f",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "lemon",
+            "MeasuringUnit": "None",
+            "Quantity": 1
+          }
+        ],
+        "Details": "Serve with lemon slices and additional fish sauce, if desired.",
+        "Id": "905ed9a7-8ccc-46b6-9524-646d5c55106c",
+        "Name": "",
+        "Description": ""
+      }
+    ],
+    "Id": "4ce0ff17-7af0-44ce-91ff-11ac99b3730d",
+    "Name": "Chicken Arroz Caldo (Chicken Rice Porridge)",
+    "Description": "Arroz caldo is a comforting and flavorsome Filipino rice and chicken soup served mainly as a snack but can be enjoyed any time of the day."
+  },
+  {
+    "$type": "FoodRecipe",
+    "FoodType": "Salad",
+    "CuisineType": "None",
+    "IsVegetarian": true,
+    "IsVegan": true,
+    "SpiceLevel": "Mild",
+    "DateCreated": "01-Aug-25 12:09:26 AM",
+    "DateLastModified": "01-Aug-25 12:09:26 AM",
+    "Tags": [
+      {
+        "TagColor": "Green",
+        "Id": "a214de40-6d28-42a3-bd4d-87443706d9d7",
+        "Name": "vegetarian",
+        "Description": ""
+      },
+      {
+        "TagColor": "Green",
+        "Id": "7994b960-48de-4f03-9cbd-fddfa92767e6",
+        "Name": "vegan",
+        "Description": ""
+      }
+    ],
+    "Ingredients": [
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 2,
+        "Note": "husked and cleaned",
+        "Id": "083cee44-ce51-4068-a933-1fde474628a6",
+        "Name": "corn",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 2,
+        "Note": "diced",
+        "Id": "9940ec7f-4254-4a58-9515-35324a2c01c1",
+        "Name": "yellow squash",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.5,
+        "Note": "",
+        "Id": "1ed51ca3-204a-48ad-af0a-8b00b1b6091d",
+        "Name": "water",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Tablespoon",
+        "Quantity": 2,
+        "Note": "more to taste",
+        "Id": "68f794bb-ccf0-42c8-bc8f-88764c2474a5",
+        "Name": "butter",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Tablespoon",
+        "Quantity": 1,
+        "Note": "optional, chopped",
+        "Id": "b439ff9e-530c-4ddb-8708-87477017a9b1",
+        "Name": "fresh parsley",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Imprecise",
+        "MeasuringUnit": "ToTaste",
+        "Quantity": 0,
+        "Note": "",
+        "Id": "5e264a13-e1c7-4422-88e6-b3ca5545f3a9",
+        "Name": "salt and pepper",
+        "Description": ""
+      }
+    ],
+    "ServingSize": 4,
+    "PrepTime": 600,
+    "CookTime": 1500,
+    "Difficulty": "Beginner",
+    "Gallery": [],
+    "Hidden": false,
+    "Instructions": [
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "corn",
+            "MeasuringUnit": "None",
+            "Quantity": 2
+          }
+        ],
+        "Details": "Place corn into a large pot and cover with salted water; bring to a boil. Reduce the heat to medium-low and simmer until tender, 10 to 15 minutes. Drain and set aside to cool.",
+        "Id": "776b104c-79d8-4eeb-bc03-041ffd912a31",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "yellow squash",
+            "MeasuringUnit": "None",
+            "Quantity": 2
+          },
+          {
+            "Name": "water",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.5
+          }
+        ],
+        "Details": "While the corn is cooling, place squash into a skillet and add water. Cook over medium heat until tender, 5 to 10 minutes. Drain any excess water from the skillet.",
+        "Id": "d8865975-7864-43a2-8b51-040759d55d4e",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "butter",
+            "MeasuringUnit": "Tablespoon",
+            "Quantity": 2
+          },
+          {
+            "Name": "fresh parsley",
+            "MeasuringUnit": "Tablespoon",
+            "Quantity": 1
+          },
+          {
+            "Name": "salt and pepper",
+            "MeasuringUnit": "ToTaste",
+            "Quantity": 0
+          }
+        ],
+        "Details": "Cut kernels off the cobs. Stir corn, butter, parsley, salt, and pepper into squash; cook, stirring occasionally, until heated through, about 5 minutes.",
+        "Id": "bbf0a306-5544-4eff-8cd4-d42606eac3b9",
+        "Name": "",
+        "Description": ""
+      }
+    ],
+    "Id": "a2031fcc-f4eb-45f2-9f6e-24c84c3a72ab",
+    "Name": "Yellow Squash and Corn Saut\u00E9",
+    "Description": "Use summer squash and leftover corn on the cob to make this pretty side dish that\u2019s super tasty."
+  },
+  {
+    "$type": "FoodRecipe",
+    "FoodType": "MainCourse",
+    "CuisineType": "American",
+    "IsVegetarian": false,
+    "IsVegan": false,
+    "SpiceLevel": "Mild",
+    "DateCreated": "01-Aug-25 12:09:26 AM",
+    "DateLastModified": "01-Aug-25 12:09:26 AM",
+    "Tags": [
+      {
+        "TagColor": "Orange",
+        "Id": "033e318b-48f9-458f-af3a-8c944d030bff",
+        "Name": "beef",
+        "Description": ""
+      }
+    ],
+    "Ingredients": [
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Pound",
+        "Quantity": 1,
+        "Note": "",
+        "Id": "15b96671-00ff-418f-8447-67cc55afc1f2",
+        "Name": "lean ground beef",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.25,
+        "Note": "chopped",
+        "Id": "3539b949-b65c-47d5-bccc-dfd93929402a",
+        "Name": "onion",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.25,
+        "Note": "chopped",
+        "Id": "71f321d4-9e54-46e5-8c63-4933d94af43c",
+        "Name": "green bell pepper",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.75,
+        "Note": "adjust to taste",
+        "Id": "e2db5347-3900-4a23-af6e-d93bfcf6493f",
+        "Name": "ketchup",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Tablespoon",
+        "Quantity": 1,
+        "Note": "adjust to taste",
+        "Id": "82e4f7ef-3f6a-4816-ad26-e44fbbe30e29",
+        "Name": "brown sugar",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 1,
+        "Note": "adjust to taste",
+        "Id": "24b545d7-5402-4d7d-adec-f96e2fda2277",
+        "Name": "yellow mustard",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 0.5,
+        "Note": "",
+        "Id": "70d35950-1c6b-421c-8dbe-f8a35e015f8f",
+        "Name": "garlic powder",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Imprecise",
+        "MeasuringUnit": "None",
+        "Quantity": 0,
+        "Note": "to taste",
+        "Id": "be8f7cb7-e5a7-401d-bd0e-e0f3ca38fb9f",
+        "Name": "salt and pepper",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 6,
+        "Note": "split",
+        "Id": "823d15f9-1228-4504-b890-e717d23a49aa",
+        "Name": "hamburger buns",
+        "Description": ""
+      }
+    ],
+    "ServingSize": 6,
+    "PrepTime": 300,
+    "CookTime": 1800,
+    "Difficulty": "Beginner",
+    "Gallery": [],
+    "Hidden": false,
+    "Instructions": [
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "lean ground beef",
+            "MeasuringUnit": "Pound",
+            "Quantity": 1
+          },
+          {
+            "Name": "onion",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.25
+          },
+          {
+            "Name": "green bell pepper",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.25
+          }
+        ],
+        "Details": "Heat a large skillet over medium heat. Cook and stir lean ground beef in the hot skillet until some of the fat starts to render, 3 to 4 minutes. Add onion and bell pepper; continue to cook until vegetables have softened and beef is cooked through, 3 to 5 more minutes.",
+        "Id": "0a6fccdd-fb63-4c5d-b5c4-e524f83b67b4",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "ketchup",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.75
+          },
+          {
+            "Name": "brown sugar",
+            "MeasuringUnit": "Tablespoon",
+            "Quantity": 1
+          }
+        ],
+        "Details": "Stir in ketchup, brown sugar, mustard, and garlic powder; season with salt and pepper. Reduce heat to low and simmer for 20 to 30 minutes.",
+        "Id": "8ca0c26e-eabe-4af8-aae3-93e8333f2ca4",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "hamburger buns",
+            "MeasuringUnit": "None",
+            "Quantity": 6
+          }
+        ],
+        "Details": "Divide meat mixture evenly among hamburger buns.",
+        "Id": "e8f3f150-5fd3-4422-9013-fbe4dcb5b97a",
+        "Name": "",
+        "Description": ""
+      }
+    ],
+    "Id": "a8556b7a-4763-4288-bd4f-4e462a082541",
+    "Name": "Sloppy Joes",
+    "Description": "These crowd-pleasing Sloppy Joe sandwiches will take you back to your childhood! This is my mom\u0027s recipe and it always gets compliments!"
+  },
+  {
+    "$type": "FoodRecipe",
+    "FoodType": "MainCourse",
+    "CuisineType": "Italian",
+    "IsVegetarian": false,
+    "IsVegan": false,
+    "SpiceLevel": "Mild",
+    "DateCreated": "01-Aug-25 12:09:26 AM",
+    "DateLastModified": "01-Aug-25 12:09:26 AM",
+    "Tags": [
+      {
+        "TagColor": "Purple",
+        "Id": "ce24619c-c522-443a-803d-58b2e48d3913",
+        "Name": "pork",
+        "Description": ""
+      }
+    ],
+    "Ingredients": [
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 1,
+        "Note": "trimmed",
+        "Id": "fea06d8a-9299-47be-910f-88ba5e8e9802",
+        "Name": "St. Louis-style ribs or baby back ribs",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 0.5,
+        "Note": "",
+        "Id": "cc46f405-8009-4a66-bc2a-24f9b1132b86",
+        "Name": "fennel seed",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 1.5,
+        "Note": "",
+        "Id": "ef65d981-504c-428f-87ee-fe982044a818",
+        "Name": "rosemary leaves",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 2,
+        "Note": "",
+        "Id": "aba7b1d8-2a47-4ed0-978b-32af46a6d96f",
+        "Name": "kosher salt",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 1,
+        "Note": "",
+        "Id": "d3168894-5c76-4d85-9c79-cb68dcbf6a59",
+        "Name": "freshly ground black pepper",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 0.5,
+        "Note": "",
+        "Id": "f5b39096-1350-4993-98c2-c2a3d18cf340",
+        "Name": "red pepper flakes",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 0.5,
+        "Note": "",
+        "Id": "8c401339-87d0-4915-b6db-3874808decf8",
+        "Name": "garlic powder",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "Clove",
+        "Quantity": 1,
+        "Note": "diced",
+        "Id": "a48c8eb4-04ee-4619-8778-a430fc68b2ff",
+        "Name": "garlic",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Imprecise",
+        "MeasuringUnit": "Pinch",
+        "Quantity": 1,
+        "Note": "",
+        "Id": "a701312a-2b4d-4853-a4b9-d9551d039393",
+        "Name": "salt",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Tablespoon",
+        "Quantity": 2,
+        "Note": "",
+        "Id": "83b28723-80b5-4c3f-9965-306da1340ec8",
+        "Name": "freshly squeezed lemon juice",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.25,
+        "Note": "",
+        "Id": "26e71e5c-7805-4c16-a847-eba7b2e3472f",
+        "Name": "olive oil",
+        "Description": ""
+      }
+    ],
+    "ServingSize": 4,
+    "PrepTime": 1500,
+    "CookTime": 1200,
+    "Difficulty": "Intermediate",
+    "Gallery": [],
+    "Hidden": false,
+    "Instructions": [
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "fennel seed",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 0.5
+          },
+          {
+            "Name": "rosemary leaves",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 1
+          },
+          {
+            "Name": "kosher salt",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 2
+          },
+          {
+            "Name": "freshly ground black pepper",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 1
+          },
+          {
+            "Name": "red pepper flakes",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 0.5
+          },
+          {
+            "Name": "garlic powder",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 0.5
+          }
+        ],
+        "Details": "Crush fennel seeds in a mortar until coarsely ground. Add rosemary; crush for a few seconds until rosemary is bruised and fragrant. Stir in salt, black pepper, red pepper, and garlic powder.",
+        "Id": "94f5b14a-fc59-4077-8f47-1b75d0c88b41",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "St. Louis-style ribs or baby back ribs",
+            "MeasuringUnit": "None",
+            "Quantity": 1
+          }
+        ],
+        "Details": "Cut ribs apart by slicing in between each bone with a sharp knife. Press ribs back together, sprinkle 1/3 of rub mixture on the bottom (bone side) of ribs, and rub in firmly. Sprinkle remaining rub on the meat side, and press in firmly.",
+        "Id": "e3d60f9f-a0b5-4ada-b0df-7236ad97b825",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [],
+        "Details": "Stack half the ribs on top of the other half, and place into a resealable plastic bag. Squeeze out the air, seal tightly, and marinate in the refrigerator for at least 4 and up to 18 hours.",
+        "Id": "25c8ae09-30f0-49a0-9072-a736d6769458",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "garlic",
+            "MeasuringUnit": "Clove",
+            "Quantity": 1
+          },
+          {
+            "Name": "salt",
+            "MeasuringUnit": "Pinch",
+            "Quantity": 1
+          },
+          {
+            "Name": "rosemary leaves",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 0.5
+          },
+          {
+            "Name": "freshly squeezed lemon juice",
+            "MeasuringUnit": "Tablespoon",
+            "Quantity": 2
+          },
+          {
+            "Name": "olive oil",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.25
+          }
+        ],
+        "Details": "Before grilling, make lemon garlic dressing. Crush garlic and salt in a mortar, then stir or whisk in rosemary, lemon juice, and olive oil.",
+        "Id": "6853d7ef-1ed2-4e0c-9dab-1ac379ab1908",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [],
+        "Details": "Prepare a charcoal grill for medium-high heat. Grill ribs, turning every 3 to 4 minutes to grill all sides, for about 20 to 30 minutes. An instant read thermometer inserted into the thickest part of the meat and touching the bone should read 180 to 185 degrees F (82 to 85 degrees C). Let rest for 5 to 10 minutes.",
+        "Id": "3389bd67-eba3-4bd5-94cb-0b10fd1eebab",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [],
+        "Details": "Drizzle with lemon garlic dressing to serve. When done, the meat will not be falling off the bone, but should come off relatively cleanly when bitten. Serve with any remaining dressing on the side, and fresh lemon wedges.",
+        "Id": "0e594f9b-0c3f-46f7-bcd0-3dbd862a353f",
+        "Name": "",
+        "Description": ""
+      }
+    ],
+    "Id": "e2f3254c-a0a2-430c-8369-7cc9ddbbb709",
+    "Name": "Tuscan Style Ribs (Rosticciana)",
+    "Description": "These Tuscan style ribs, or Rosticciana, are grilled relatively quickly to a beautiful rusty red, and drizzled with a bright citronette, a lemon-garlic dressing. They are pleasurably chewy and intensely delicious, proving that low and slow is not the only way to go when cooking ribs."
+  },
+  {
+    "$type": "FoodRecipe",
+    "FoodType": "Dessert",
+    "CuisineType": "None",
+    "IsVegetarian": false,
+    "IsVegan": false,
+    "SpiceLevel": "None",
+    "DateCreated": "01-Aug-25 12:09:26 AM",
+    "DateLastModified": "01-Aug-25 12:09:26 AM",
+    "Tags": [
+      {
+        "TagColor": "Blue",
+        "Id": "770af2a4-0f98-4163-bad6-7c4e6975c4da",
+        "Name": "dessert",
+        "Description": ""
+      }
+    ],
+    "Ingredients": [
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Ounce",
+        "Quantity": 16,
+        "Note": "thawed",
+        "Id": "ea443459-ded5-4c15-82db-76a90849dcd3",
+        "Name": "package frozen phyllo dough",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Cup",
+        "Quantity": 1,
+        "Note": "melted",
+        "Id": "48b0f436-f6c5-41af-9cec-a6d8a19f9907",
+        "Name": "butter",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Ounce",
+        "Quantity": 8,
+        "Note": "",
+        "Id": "05f12931-6033-437d-8553-fb8f5c812bc3",
+        "Name": "Camembert cheese",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.75,
+        "Note": "",
+        "Id": "812c2e5e-b670-48b0-874b-17143b73468a",
+        "Name": "milk",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 2,
+        "Note": "",
+        "Id": "e7b71918-8a19-47d6-8cb4-af7af91f644f",
+        "Name": "large eggs",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 1,
+        "Note": "",
+        "Id": "da2dcec3-19eb-4a7c-b9ae-4c4d5b6e2c41",
+        "Name": "vanilla extract",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 0.25,
+        "Note": "",
+        "Id": "db72ccb6-e3fc-4a0f-b1aa-defdda87d2b7",
+        "Name": "kosher salt",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 1,
+        "Note": "cored and thinly sliced",
+        "Id": "04d8b90f-9417-409c-a82c-29e68e90bb2f",
+        "Name": "Fuji apple",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 1,
+        "Note": "",
+        "Id": "d9dac46a-f0b2-41b3-881e-3c99b5f7318c",
+        "Name": "fresh thyme",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.25,
+        "Note": "",
+        "Id": "56ab9c29-d91b-4b15-9a38-7626a35f8d1c",
+        "Name": "honey",
+        "Description": ""
+      }
+    ],
+    "ServingSize": 20,
+    "PrepTime": 900,
+    "CookTime": 3300,
+    "Difficulty": "Intermediate",
+    "Gallery": [],
+    "Hidden": false,
+    "Instructions": [
+      {
+        "IngredientsRequired": [],
+        "Details": "Preheat the oven to 350 degrees F (180 degrees C). Line a 9x13-inch baking pan with parchment paper.",
+        "Id": "a14b8c16-1891-42b1-b6a0-b767720bb03d",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "package frozen phyllo dough",
+            "MeasuringUnit": "Ounce",
+            "Quantity": 16
+          }
+        ],
+        "Details": "Stack 2 phyllo sheets; starting with a short end, fold accordion-style into a strip, using approximately 1 1/2-inch folds. Arrange folded phyllo along a short end of prepared pan. (Keep remaining phyllo covered with a clean, damp kitchen towel while you work.) Repeat stacking and folding with remaining phyllo, evenly spacing strips in the pan.",
+        "Id": "b2ac4aa4-03fc-4ca2-8ef6-feb36ea4d09f",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "butter",
+            "MeasuringUnit": "Cup",
+            "Quantity": 1
+          }
+        ],
+        "Details": "Bake in the preheated oven for 10 minutes. Remove from the oven and drizzle with butter. Continue to bake 10 minutes more.",
+        "Id": "56c8d494-c7c1-4ba7-9f16-b11c81d240c4",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "Camembert cheese",
+            "MeasuringUnit": "Ounce",
+            "Quantity": 8
+          },
+          {
+            "Name": "milk",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.75
+          },
+          {
+            "Name": "large eggs",
+            "MeasuringUnit": "None",
+            "Quantity": 2
+          },
+          {
+            "Name": "vanilla extract",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 1
+          },
+          {
+            "Name": "kosher salt",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 0.25
+          }
+        ],
+        "Details": "Meanwhile, cut Camembert wheel in half crosswise, leaving rind intact. Slice each half into thin slices, about 1/4 inch thick. Whisk together milk, eggs, vanilla, and salt in a 2-cup measuring cup until combined.",
+        "Id": "a5b8442e-a880-4dd8-a62e-556b42544238",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "Fuji apple",
+            "MeasuringUnit": "None",
+            "Quantity": 1
+          },
+          {
+            "Name": "fresh thyme",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 1
+          }
+        ],
+        "Details": "Use a small spatula or table knife to separate phyllo layers, tucking apple and Camembert slices into folds, dispersing them evenly between folds. Sprinkle with thyme. Pour egg mixture over top. Bake until top is golden, 35 to 40 minutes.",
+        "Id": "50106d11-bafb-4c81-a4bc-d6a86b45dda9",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "honey",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.25
+          }
+        ],
+        "Details": "Cool on a wire rack 15 minutes. Drizzle with honey and serve warm. (To store, chill, covered, up to 3 days.)",
+        "Id": "63b976e6-c44e-4e83-bec5-73e46e3e664e",
+        "Name": "",
+        "Description": ""
+      }
+    ],
+    "Id": "c3f1fd7e-05f2-4700-a0ca-e4c6ea12d6a8",
+    "Name": "Crinkle Cake with Apples and Camembert",
+    "Description": "In this crinkle cake with apples and Camembert, creamy Camembert and fresh apple slices are tucked into flaky phyllo dough for a sweet and melty appetizer (or dessert!)."
+  },
+  {
+    "$type": "FoodRecipe",
+    "FoodType": "Dessert",
+    "CuisineType": "None",
+    "IsVegetarian": false,
+    "IsVegan": false,
+    "SpiceLevel": "None",
+    "DateCreated": "01-Aug-25 12:09:26 AM",
+    "DateLastModified": "01-Aug-25 12:09:26 AM",
+    "Tags": [
+      {
+        "TagColor": "Blue",
+        "Id": "13385385-0d75-43e6-b1e2-3b952a23f3f6",
+        "Name": "dessert",
+        "Description": ""
+      }
+    ],
+    "Ingredients": [
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Ounce",
+        "Quantity": 3,
+        "Note": "",
+        "Id": "8c4330df-567e-4a69-adf3-92389454cf96",
+        "Name": "package orange flavored gelatin (such as Jell-O\u00AE)",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.33,
+        "Note": "",
+        "Id": "ac0bd0f0-6621-45f6-bcc0-14e43d3d6167",
+        "Name": "boiling water",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Tablespoon",
+        "Quantity": 1,
+        "Note": "add more for garnish",
+        "Id": "75531f9d-136d-467c-b221-2fbdf9dc04f0",
+        "Name": "grated orange zest",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.5,
+        "Note": "",
+        "Id": "a0422620-a1cc-48b9-8923-62c0591be2f4",
+        "Name": "fresh orange juice",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Ounce",
+        "Quantity": 4,
+        "Note": "at room temperature",
+        "Id": "690202cb-edba-42de-a643-a3c94ee18745",
+        "Name": "cream cheese",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 3,
+        "Note": "thawed",
+        "Id": "267bcf22-cce8-45f7-ad8c-7aa63f6d84fb",
+        "Name": "frozen whipped topping",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 1,
+        "Note": "",
+        "Id": "a0cad510-3f77-4382-91a6-8c5d0fd6c1e1",
+        "Name": "ready-to-use graham cracker pie crust",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.5,
+        "Note": "drained and patted dry",
+        "Id": "926c8f93-b94c-4484-9590-31756633759d",
+        "Name": "canned mandarin oranges",
+        "Description": ""
+      }
+    ],
+    "ServingSize": 8,
+    "PrepTime": 900,
+    "CookTime": 16200,
+    "Difficulty": "Beginner",
+    "Gallery": [],
+    "Hidden": false,
+    "Instructions": [
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "package orange flavored gelatin (such as Jell-O\u00AE)",
+            "MeasuringUnit": "Ounce",
+            "Quantity": 3
+          },
+          {
+            "Name": "boiling water",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.33
+          },
+          {
+            "Name": "grated orange zest",
+            "MeasuringUnit": "Tablespoon",
+            "Quantity": 1
+          },
+          {
+            "Name": "fresh orange juice",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.5
+          }
+        ],
+        "Details": "Whisk orange gelatin and boiling water together in a medium bowl until completely dissolved and slightly cooled, about 2 minutes. Whisk in orange zest and juice until combined. Set aside.",
+        "Id": "be7d3cb6-e725-4ec5-a0e8-6545ce04cddd",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "cream cheese",
+            "MeasuringUnit": "Ounce",
+            "Quantity": 4
+          }
+        ],
+        "Details": "Whisk cream cheese in a large bowl until smooth, about 30 seconds. Gradually whisk in gelatin mixture until smooth.",
+        "Id": "59150d89-8801-4a2e-9a7c-d175172eb0d1",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "frozen whipped topping",
+            "MeasuringUnit": "Cup",
+            "Quantity": 1.5
+          }
+        ],
+        "Details": "Whisk in whipped topping until smooth and no lumps remain; refrigerate creamsicle filling uncovered, until partially set and slightly thickened, about 30 minutes.",
+        "Id": "eeae1890-4713-42c8-a871-0f0991018218",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "ready-to-use graham cracker pie crust",
+            "MeasuringUnit": "None",
+            "Quantity": 1
+          }
+        ],
+        "Details": "Pour filling into graham cracker crust and spread evenly. Cover and refrigerate until set, at least 4 hours or up to overnight.",
+        "Id": "3eca70aa-5624-44a4-8d65-3734d0fc91c8",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "frozen whipped topping",
+            "MeasuringUnit": "Cup",
+            "Quantity": 1.5
+          }
+        ],
+        "Details": "Before serving, spoon the remaining whipped topping over the orange layer and spread into an even layer.",
+        "Id": "2a348085-bfb7-4e4c-8e9e-76f8e146b484",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "canned mandarin oranges",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.5
+          }
+        ],
+        "Details": "Arrange mandarins decoratively over the top, sprinkle with zest, and serve.",
+        "Id": "5f1b4994-2829-4f2e-884f-841d7ac484b1",
+        "Name": "",
+        "Description": ""
+      }
+    ],
+    "Id": "95abd2e6-0937-4e97-8ee6-88396f2754df",
+    "Name": "No-Bake Orange Creamsicle Pie",
+    "Description": "This no-bake orange creamsicle pie tastes just like the childhood favorite frozen treat, creamy, rich, and with a bright, punchy orange pop from fresh orange zest and juice, along with orange Jell-O."
+  },
+  {
+    "$type": "FoodRecipe",
+    "FoodType": "Breakfast",
+    "CuisineType": "None",
+    "IsVegetarian": false,
+    "IsVegan": false,
+    "SpiceLevel": "None",
+    "DateCreated": "01-Aug-25 12:09:26 AM",
+    "DateLastModified": "01-Aug-25 12:09:26 AM",
+    "Tags": [
+      {
+        "TagColor": "Yellow",
+        "Id": "4355f280-6725-43b8-9e79-46a502d7b253",
+        "Name": "breakfast",
+        "Description": ""
+      }
+    ],
+    "Ingredients": [
+      {
+        "MeasuringUnitCategory": "Count",
+        "MeasuringUnit": "None",
+        "Quantity": 3,
+        "Note": "",
+        "Id": "79f5f073-c83f-4b57-b262-d767e01df288",
+        "Name": "large eggs",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.66,
+        "Note": "",
+        "Id": "e94f7da3-2558-44d1-81e3-18d8e950d17c",
+        "Name": "pumpkin spice coffee creamer",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.33,
+        "Note": "",
+        "Id": "f42f7532-7b4a-4f80-abb4-f3e92c3c0014",
+        "Name": "canned pumpkin",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.25,
+        "Note": "more for serving",
+        "Id": "f113b5af-0727-4c0d-a58d-a0705c80f766",
+        "Name": "pure maple syrup",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 0.25,
+        "Note": "",
+        "Id": "a0ad753c-2ecb-4348-8a22-aaf9fde6e6d4",
+        "Name": "salt",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Ounce",
+        "Quantity": 16,
+        "Note": "cut into slices",
+        "Id": "a9fa072f-8aa7-4563-b2d5-8ab0a0d32784",
+        "Name": "French bread",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 2,
+        "Note": "",
+        "Id": "1a4f3d28-e102-42c7-9484-bc4a4c421d06",
+        "Name": "pumpkin pie spice or ground cinnamon",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Imprecise",
+        "MeasuringUnit": "None",
+        "Quantity": 0,
+        "Note": "for serving",
+        "Id": "4e25b3de-63f8-4894-bc49-a9e079fbcb0d",
+        "Name": "pumpkin butter, sliced almonds, and/or powdered sugar",
+        "Description": ""
+      }
+    ],
+    "ServingSize": 8,
+    "PrepTime": 900,
+    "CookTime": 1500,
+    "Difficulty": "Beginner",
+    "Gallery": [],
+    "Hidden": false,
+    "Instructions": [
+      {
+        "IngredientsRequired": [],
+        "Details": "Preheat the oven to 350 degrees F (180 degrees C). Coat a 10x15-inch rimmed sheet pan with cooking spray or line with parchment paper.",
+        "Id": "3709750d-258c-4942-b5a9-12f67b330120",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "large eggs",
+            "MeasuringUnit": "None",
+            "Quantity": 3
+          },
+          {
+            "Name": "pumpkin spice coffee creamer",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.66
+          },
+          {
+            "Name": "canned pumpkin",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.33
+          },
+          {
+            "Name": "pure maple syrup",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.25
+          },
+          {
+            "Name": "salt",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 0.25
+          },
+          {
+            "Name": "French bread",
+            "MeasuringUnit": "Ounce",
+            "Quantity": 16
+          },
+          {
+            "Name": "pumpkin pie spice or ground cinnamon",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 2
+          }
+        ],
+        "Details": "Whisk together eggs, creamer, pumpkin, maple syrup, and salt in a bowl; pour into a shallow dish. Soak bread slices in egg mixture, turning once, until well soaked. Shingle bread slices in the prepared pan; sprinkle with pumpkin pie spice.",
+        "Id": "0012c4b3-b569-4ffa-a85b-b824ef29496e",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "pumpkin butter, sliced almonds, and/or powdered sugar",
+            "MeasuringUnit": "None",
+            "Quantity": 0
+          }
+        ],
+        "Details": "Bake in the preheated oven until golden brown, 25 to 30 minutes. Serve with pumpkin butter, almonds, powdered sugar, and/or additional maple syrup.",
+        "Id": "7fd26f92-9a8e-4513-ac3c-fc418eae533d",
+        "Name": "",
+        "Description": ""
+      }
+    ],
+    "Id": "f183f5bd-3744-4095-b5df-a7a4c4e88786",
+    "Name": "Sheet Pan Pumpkin-Spice French Toast",
+    "Description": "This sheet pan pumpkin spice French toast is sweetened with flavored coffee creamer. For extra fall flavor, top off this breakfast dish with pumpkin butter."
+  },
+  {
+    "$type": "DrinkRecipe",
+    "IsAlcoholic": true,
+    "DateCreated": "01-Aug-25 12:09:26 AM",
+    "DateLastModified": "01-Aug-25 12:09:26 AM",
+    "Tags": [
+      {
+        "TagColor": "Red",
+        "Id": "c8191fb6-1f2f-4f18-b15b-e341ea3f9cbe",
+        "Name": "alcoholic drink",
+        "Description": ""
+      }
+    ],
+    "Ingredients": [
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Cup",
+        "Quantity": 1.33,
+        "Note": "chopped",
+        "Id": "2f198302-3959-456c-b384-a328630c94c7",
+        "Name": "fresh rhubarb",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.66,
+        "Note": "",
+        "Id": "0eae7af4-8f1d-471d-9e0d-81358213b1d0",
+        "Name": "honey",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 2.66,
+        "Note": "",
+        "Id": "26ed1cda-6947-42d6-955f-0a2874b4a75d",
+        "Name": "water",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Tablespoon",
+        "Quantity": 1,
+        "Note": "grated",
+        "Id": "272b45ff-1b37-431c-b08e-5878c2935d9f",
+        "Name": "fresh ginger",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Tablespoon",
+        "Quantity": 2,
+        "Note": "or 4 bags",
+        "Id": "81879708-1396-4e76-8aef-aac44d48575e",
+        "Name": "loose green tea",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Cup",
+        "Quantity": 1,
+        "Note": "more for garnish",
+        "Id": "06c15787-74c1-47a9-8ac7-2e95476de65f",
+        "Name": "fresh mint",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 2,
+        "Note": "",
+        "Id": "592e7cd4-913c-4521-8e43-ab35f1c7dadf",
+        "Name": "vodka",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 1,
+        "Note": "",
+        "Id": "4ad24377-fc18-48b6-aaf1-5a2993d60b7a",
+        "Name": "fresh lime juice",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 2,
+        "Note": "chilled",
+        "Id": "aaf4ec8c-b675-4ab9-9030-0e25776dfdc8",
+        "Name": "club soda",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Imprecise",
+        "MeasuringUnit": "None",
+        "Quantity": 0,
+        "Note": "as needed",
+        "Id": "6d5c5d42-99da-45ae-aba2-5669ef42de57",
+        "Name": "ice",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Imprecise",
+        "MeasuringUnit": "None",
+        "Quantity": 0,
+        "Note": "for garnish",
+        "Id": "c76bfda5-b421-4631-8235-3f87d7cf6028",
+        "Name": "rhubarb stalks",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 2,
+        "Note": "",
+        "Id": "124305cb-e329-40f9-b1c1-eb6410beba05",
+        "Name": "water",
+        "Description": ""
+      }
+    ],
+    "ServingSize": 10,
+    "PrepTime": 600,
+    "CookTime": 900,
+    "Difficulty": "Intermediate",
+    "Gallery": [],
+    "Hidden": false,
+    "Instructions": [
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "fresh rhubarb",
+            "MeasuringUnit": "Cup",
+            "Quantity": 1.33
+          },
+          {
+            "Name": "honey",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.66
+          },
+          {
+            "Name": "water",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.66
+          },
+          {
+            "Name": "fresh ginger",
+            "MeasuringUnit": "Tablespoon",
+            "Quantity": 1
+          }
+        ],
+        "Details": "For syrup, stir rhubarb, honey, water, and ginger together in a small saucepan. Bring to a boil; reduce heat to low and simmer, covered, for 15 minutes. Remove from heat; let cool completely, about 1 hour.",
+        "Id": "41ba39c5-ad3b-428a-acfe-e2b9f8a2fb92",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [],
+        "Details": "Strain through a fine-mesh sieve into an airtight container or jar; discard solids. Syrup can be stored in the refrigerator for up to 1 week.",
+        "Id": "b436875c-5ac9-44eb-a5ce-8a75d974cc7b",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "water",
+            "MeasuringUnit": "Cup",
+            "Quantity": 2
+          },
+          {
+            "Name": "loose green tea",
+            "MeasuringUnit": "Tablespoon",
+            "Quantity": 2
+          }
+        ],
+        "Details": "For green tea punch, bring water to a boil in a medium saucepan. Remove from heat and add tea bags (or loose tea). Steep, covered, 5 minutes. Remove tea bags, or strain to remove loose tea. Let tea cool completely, about 1 hour.",
+        "Id": "390b27ec-25a7-41e0-a04a-4663bf7752b0",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "fresh mint",
+            "MeasuringUnit": "Cup",
+            "Quantity": 1
+          },
+          {
+            "Name": "vodka",
+            "MeasuringUnit": "Cup",
+            "Quantity": 2
+          },
+          {
+            "Name": "fresh lime juice",
+            "MeasuringUnit": "Cup",
+            "Quantity": 1
+          }
+        ],
+        "Details": "Muddle mint in a large pitcher. Add cooled tea, vodka, honey-rhubarb syrup, and lime juice. Chill at least 30 minutes, or up to 12 hours.",
+        "Id": "222ac2a8-7034-4150-8b75-eda489e5820c",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "club soda",
+            "MeasuringUnit": "Cup",
+            "Quantity": 2
+          },
+          {
+            "Name": "ice",
+            "MeasuringUnit": "None",
+            "Quantity": 0
+          },
+          {
+            "Name": "rhubarb stalks",
+            "MeasuringUnit": "None",
+            "Quantity": 0
+          }
+        ],
+        "Details": "Add club soda to a pitcher and stir gently. Serve over ice and garnish with fresh mint and rhubarb stalks.",
+        "Id": "59ac4224-b739-4ed4-adb8-6f1f42239291",
+        "Name": "",
+        "Description": ""
+      }
+    ],
+    "Id": "1e7669ab-9814-4bf3-af2f-a1a1b57ed899",
+    "Name": "Green Tea and Honey-Rhubarb Punch",
+    "Description": "In this green tea and honey-rhubarb punch, sweet honey and fresh mint balance rhubarb\u2019s tart flavor notes for a sparkling big-batch vodka sipper."
+  },
+  {
+    "$type": "DrinkRecipe",
+    "IsAlcoholic": false,
+    "DateCreated": "01-Aug-25 12:09:26 AM",
+    "DateLastModified": "01-Aug-25 12:09:26 AM",
+    "Tags": [
+      {
+        "TagColor": "Grey",
+        "Id": "f5a212bb-e0ab-4868-9394-c45580271868",
+        "Name": "non-alcoholic drink",
+        "Description": ""
+      }
+    ],
+    "Ingredients": [
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Cup",
+        "Quantity": 1.5,
+        "Note": "zested and juiced",
+        "Id": "43759552-2f67-43db-8fc5-e966b27f0783",
+        "Name": "ruby grapefruit",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Cup",
+        "Quantity": 1,
+        "Note": "",
+        "Id": "f09df8f0-a155-477f-a136-387bb25309a7",
+        "Name": "sugar",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.75,
+        "Note": "",
+        "Id": "024d10fe-5bad-4691-ae9b-737e7bd4219c",
+        "Name": "lime juice",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 0.25,
+        "Note": "",
+        "Id": "e458ae7d-2721-4e58-b83e-e85a3339c3ce",
+        "Name": "water",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Weight",
+        "MeasuringUnit": "Teaspoon",
+        "Quantity": 1.5,
+        "Note": "",
+        "Id": "5bf564c9-b87d-474d-960c-a3eb42891036",
+        "Name": "kosher salt",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 4,
+        "Note": "",
+        "Id": "3a2bbcbe-b784-4a4b-ac78-d18b5c870f2e",
+        "Name": "club soda",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Imprecise",
+        "MeasuringUnit": "None",
+        "Quantity": 0,
+        "Note": "",
+        "Id": "fd7f5d09-0886-4b95-ac0e-d97209c7618e",
+        "Name": "ruby grapefruit zest",
+        "Description": ""
+      },
+      {
+        "MeasuringUnitCategory": "Volume",
+        "MeasuringUnit": "Cup",
+        "Quantity": 1,
+        "Note": "",
+        "Id": "4ad24377-fc18-48b6-aaf1-5a2993d60b7a",
+        "Name": "fresh lime juice",
+        "Description": ""
+      }
+    ],
+    "ServingSize": 6,
+    "PrepTime": 300,
+    "CookTime": 90000,
+    "Difficulty": "Beginner",
+    "Gallery": [],
+    "Hidden": false,
+    "Instructions": [
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "fresh lime juice",
+            "MeasuringUnit": "Cup",
+            "Quantity": 1
+          },
+          {
+            "Name": "sugar",
+            "MeasuringUnit": "Cup",
+            "Quantity": 1
+          }
+        ],
+        "Details": "To make the salted grapefruit cordial: Remove strips of zest from 1 ruby grapefruit with a vegetable peeler, avoiding any white pith. Stir grapefruit zest and sugar together in a jar. Chill, covered, for 24 hours.",
+        "Id": "183ec532-930c-4584-be9a-335ac261ff70",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "ruby grapefruit",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.5
+          },
+          {
+            "Name": "lime juice",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.25
+          },
+          {
+            "Name": "water",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.25
+          },
+          {
+            "Name": "kosher salt",
+            "MeasuringUnit": "Teaspoon",
+            "Quantity": 1.5
+          }
+        ],
+        "Details": "Squeeze juice from the grapefruit. Pour grapefruit juice, fresh lime juice, and water over the sugar mixture in the jar. Stir in kosher salt. Stir or shake mixture to dissolve sugar. Strain out zest; chill for 1 hour or cover and keep chilled for up to 3 days.",
+        "Id": "53a31fdc-638e-4c64-8df1-bec0b866d587",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [
+          {
+            "Name": "ruby grapefruit",
+            "MeasuringUnit": "Cup",
+            "Quantity": 1
+          },
+          {
+            "Name": "lime juice",
+            "MeasuringUnit": "Cup",
+            "Quantity": 0.5
+          },
+          {
+            "Name": "club soda",
+            "MeasuringUnit": "Cup",
+            "Quantity": 4
+          },
+          {
+            "Name": "ruby grapefruit zest",
+            "MeasuringUnit": "None",
+            "Quantity": 0
+          }
+        ],
+        "Details": "To make the punch: Combine salted grapefruit cordial, grapefruit juice, and lime juice in a punch bowl. Chill until ready to serve; pour in club soda before serving with citrus ice ring, if using.",
+        "Id": "aa800eb4-1b16-4ec7-8fda-b690d6f4d828",
+        "Name": "",
+        "Description": ""
+      },
+      {
+        "IngredientsRequired": [],
+        "Details": "To make a citrus ice ring: Fill an ice ring mold with very thin half slices of grapefruit and very thin slices of lime. Fill ring halfway with water; freeze until firm, about 30 minutes. Add more water to fill mold, freeze until firm, about 2 hours.",
+        "Id": "8b7dcc7c-f65d-485b-ab76-2e108ff4c628",
+        "Name": "",
+        "Description": ""
+      }
+    ],
+    "Id": "40f152f5-789f-4367-a04a-aa52532e8e6d",
+    "Name": "Salted Grapefruit Fizz",
+    "Description": "A salted grapefruit fizz is a yummy non-alcoholic punch that will surely please your guests at your next party. Add a retro vibe with a citrus ice ring."
+  }
+]

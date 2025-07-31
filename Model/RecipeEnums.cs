@@ -57,7 +57,8 @@ namespace RecipeVault.Model
         HorsDoeuvres,
         Amusebouche,
         CheeseCourse,
-        Mignardises
+        Mignardises,
+        Breakfast
     }
 
     public enum CuisineType
@@ -77,6 +78,8 @@ namespace RecipeVault.Model
         Turkish,
         Lebanese,
         MiddleEastern,
+        Filipino,
+        American,
         None
     }
 
@@ -97,5 +100,17 @@ namespace RecipeVault.Model
         Mild,
         Moderate,
         VerySpicy
+    }
+
+    public enum TagColor
+    {
+        Orange,
+        Red,
+        Green,
+        Blue,
+        Purple,
+        Grey,
+        Brown,
+        Yellow
     }
 }
