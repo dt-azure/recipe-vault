@@ -3,7 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RecipeVault.Pages.RecipeDetailsPage"
              xmlns:viewmodel="clr-namespace:RecipeVault.ViewModels"
-             x:DataType="viewmodel:RecipeDetailsViewModel">
+             x:DataType="viewmodel:RecipeDetailsViewModel"
+             xmlns:partial="clr-namespace:RecipeVault.ViewPartials">
+    <ContentPage.BindingContext>
+        <viewmodel:RecipeDetailsViewModel />
+    </ContentPage.BindingContext>
+    
     <ScrollView BackgroundColor="{StaticResource Gray100}"
                 Padding="10">
         <Border BackgroundColor="White"
@@ -11,21 +16,99 @@
                 StrokeThickness="1"
                 Stroke="{StaticResource Gray100}"
                 Padding="20">
-            <Grid RowDefinitions="auto, auto">
+            <VerticalStackLayout Padding="40,0,40,0">
                 <Label Text="{Binding SelectedRecipe.Name}"
                        HorizontalOptions="Center"
-                       FontSize="Title"
+                       FontSize="40"
                        FontAttributes="Bold"
                        Grid.Row="0"
-                       Margin="0,0,0,30"/>
+                       Margin="0,0,0,30"
+                       TextColor="Black"/>
+
+                <Label Text="{Binding SelectedRecipe.Description}" 
+                       TextColor="Black"
+                       FontSize="Subtitle"
+                       Margin="0,0,0,50"/>
+
+                <HorizontalStackLayout Margin="0,0,0,40">
+                    <HorizontalStackLayout Margin="0,0,80,0">
+                        <Image Source="level_slider_icon.png"
+                               WidthRequest="30"
+                               Margin="0,0,10,0"/>
+                        <Label Text="Difficulty: " 
+                               TextColor="Black"
+                               FontSize="20"
+                               VerticalOptions="Center"
+                               Margin="0,0,10,0"/>
+                        <Label Text="{Binding SelectedRecipe.Difficulty}" 
+                               TextColor="Black"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Margin="0,0,80,0">
+                        <Image Source="timer_icon.png"
+                               WidthRequest="30"
+                               Margin="0,0,10,0"/>
+                        <Label Text="Prep Time: " 
+                               TextColor="Black"
+                               FontSize="20"
+                               VerticalOptions="Center"
+                               Margin="0,0,10,0"/>
+                        <Label Text="{Binding FormattedPrepTime}" 
+                               TextColor="Black"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Margin="0,0,80,0">
+                        <Image Source="timer_icon.png"
+                               WidthRequest="30"
+                               Margin="0,0,10,0"/>
+                        <Label Text="Cook Time: " 
+                               TextColor="Black"
+                               FontSize="20"
+                               VerticalOptions="Center"
+                               Margin="0,0,10,0"/>
+                        <Label Text="{Binding FormattedCookTime}" 
+                               TextColor="Black"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Serving Size:"
+                               TextColor="Black"
+                               FontSize="20"
+                               Margin="0,0,10,0"
+                               VerticalOptions="Center"/>
+                        <Entry x:Name="servingSizeEntry"
+                               Placeholder="{Binding SelectedRecipe.ServingSize}"
+                               TextColor="Black"
+                               FontSize="20"
+                               MaxLength="3"
+                               BackgroundColor="{StaticResource Gray100}"
+                               Margin="0,0,20,0" />
+                        <partial:MainButton ButtonText="Apply"
+                                            Command="{Binding OnServingSizeBtnClickedCommand}"/>
+                    </HorizontalStackLayout>
+                </HorizontalStackLayout>
+
                 <Grid ColumnDefinitions="*,*"
                       Grid.Row="1">
                     <Label Text="ingredients" 
-                           Grid.Column="0"/>
+                           Grid.Column="0"
+                           TextColor="Black"/>
                     <Label Text="img" 
-                           Grid.Column="1"/>
+                           Grid.Column="1"
+                           TextColor="Black"/>
                 </Grid>
-            </Grid>
+            </VerticalStackLayout>
         </Border>
     </ScrollView>
 </ContentPage>

@@ -105,6 +105,9 @@
 	  <MauiXaml Update="Resources\Styles\SidebarItemHighlight.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ViewPartials\MainButton.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ViewPartial\RecipeArea.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

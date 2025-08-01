@@ -30,6 +30,8 @@
 
     <Color x:Key="Blue1">#22C9FF</Color>
     <Color x:Key="Blue2">#093FB4</Color>
+    <Color x:Key="Green1">#5BAB48</Color>
+    <Color x:Key="Green2">#35642A</Color>
 
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
     <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource Secondary}"/>
