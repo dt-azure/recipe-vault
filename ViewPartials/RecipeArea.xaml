@@ -3,15 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RecipeVault.ViewPartials.RecipeArea"
              xmlns:partial="clr-namespace:RecipeVault.ViewPartials"
-             xmlns:model="clr-namespace:RecipeVault.Model">
-    <CollectionView ItemsSource="{Binding Recipes}">
+             xmlns:model="clr-namespace:RecipeVault.Model"
+             xmlns:viewmodel="clr-namespace:RecipeVault.ViewModels">
+    <CollectionView ItemsSource="{Binding Recipes}"
+                    SelectionMode="None">
         <CollectionView.ItemsLayout>
             <GridItemsLayout Orientation="Vertical" Span="3"/>
         </CollectionView.ItemsLayout>
 
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="model:Recipe">
-                <partial:RecipeCard />
+                <partial:RecipeCard BindingContext="{Binding .}">
+                    <partial:RecipeCard.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainPageViewModel}}, Path=NavigateToRecipeDetailsPageCommand}"
+                                              CommandParameter="{Binding .}"/>
+                    </partial:RecipeCard.GestureRecognizers>
+                </partial:RecipeCard>
             </DataTemplate>
         </CollectionView.ItemTemplate>
 

@@ -1,10 +1,12 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using System.Collections.ObjectModel;
 using RecipeVault.Model;
+using RecipeVault.Pages;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Diagnostics;
 using System.Text.Json.Serialization.Metadata;
+using CommunityToolkit.Mvvm.Input;
 
 namespace RecipeVault.ViewModels
 {
@@ -76,6 +78,22 @@ namespace RecipeVault.ViewModels
             {
                 Debug.WriteLine(ex);
             }
+        }
+
+        [RelayCommand]
+        private async Task NavigateToRecipeDetailsPage(Recipe recipe)
+        {
+            if (recipe  == null)
+            {
+                return;
+            }
+
+            var navigationParam = new Dictionary<string, object>
+            {
+                {"SelectedRecipe", recipe }
+            };
+
+            await Shell.Current.GoToAsync(nameof(RecipeDetailsPage), true, navigationParam);
         }
     }
 }
