@@ -4,10 +4,28 @@
              x:Class="RecipeVault.Pages.RecipeDetailsPage"
              xmlns:viewmodel="clr-namespace:RecipeVault.ViewModels"
              x:DataType="viewmodel:RecipeDetailsViewModel">
-    <VerticalStackLayout>
-        <Label 
-            Text="{Binding SelectedRecipe.Name}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView BackgroundColor="{StaticResource Gray100}"
+                Padding="10">
+        <Border BackgroundColor="White"
+                StrokeShape="RoundRectangle 10"
+                StrokeThickness="1"
+                Stroke="{StaticResource Gray100}"
+                Padding="20">
+            <Grid RowDefinitions="auto, auto">
+                <Label Text="{Binding SelectedRecipe.Name}"
+                       HorizontalOptions="Center"
+                       FontSize="Title"
+                       FontAttributes="Bold"
+                       Grid.Row="0"
+                       Margin="0,0,0,30"/>
+                <Grid ColumnDefinitions="*,*"
+                      Grid.Row="1">
+                    <Label Text="ingredients" 
+                           Grid.Column="0"/>
+                    <Label Text="img" 
+                           Grid.Column="1"/>
+                </Grid>
+            </Grid>
+        </Border>
+    </ScrollView>
 </ContentPage>
