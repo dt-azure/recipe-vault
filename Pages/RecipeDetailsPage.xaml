@@ -95,7 +95,7 @@
                                BackgroundColor="{StaticResource Gray100}"
                                Margin="0,0,20,0" />
                         <partial:MainButton ButtonText="Apply"
-                                            Command="{Binding OnServingSizeBtnClickedCommand}"/>
+                                            ButtonCommand="{Binding OnServingSizeBtnClickedCommand}"/>
                     </HorizontalStackLayout>
                 </HorizontalStackLayout>
 
