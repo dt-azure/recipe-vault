@@ -13,16 +13,16 @@ namespace RecipeVault.Model
     {
         public string DateCreated { get; set; }
         public string DateLastModified { get; set; }
-        public List<Tag> Tags { get; }
-        public List<Ingredient> Ingredients { get; }
+        public List<Tag> Tags { get; set; }
+        public List<Ingredient> Ingredients { get; set; }
         public int ServingSize { get; set; }
         //Time in seconds
         public int PrepTime { get; set; }
         public int CookTime { get; set; }
         public Difficulty Difficulty { get; set; }
-        public List<Image> Gallery {  get; }
+        public List<RecipeImage> Gallery { get; set; }
         public bool Hidden { get; set; }
-        public List<RecipeInstruction> Instructions { get; }
+        public List<RecipeInstruction> Instructions { get; set; }
 
 
         public Recipe(string name, string desc, int servingSize, int prepTime, int cookTime, Difficulty difficulty) : base(name, desc)
@@ -35,7 +35,7 @@ namespace RecipeVault.Model
             PrepTime = prepTime;
             CookTime = cookTime;
             Difficulty = difficulty;
-            Gallery = new List<Image>();
+            Gallery = new List<RecipeImage>();
             Hidden = false;
             Instructions = new List<RecipeInstruction>();
         }
@@ -58,10 +58,11 @@ namespace RecipeVault.Model
 
         public void AddInstruction(RecipeInstruction instruction)
         {
+            instruction.Index = Instructions.Count + 1;
             Instructions.Add(instruction);
         }
 
-        public void AddImage(Image image)
+        public void AddImage(RecipeImage image)
         {
             Gallery.Add(image);
         }

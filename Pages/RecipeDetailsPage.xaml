@@ -4,11 +4,10 @@
              x:Class="RecipeVault.Pages.RecipeDetailsPage"
              xmlns:viewmodel="clr-namespace:RecipeVault.ViewModels"
              x:DataType="viewmodel:RecipeDetailsViewModel"
-             xmlns:partial="clr-namespace:RecipeVault.ViewPartials">
-    <ContentPage.BindingContext>
-        <viewmodel:RecipeDetailsViewModel />
-    </ContentPage.BindingContext>
-    
+             xmlns:partial="clr-namespace:RecipeVault.ViewPartials"
+             xmlns:model="clr-namespace:RecipeVault.Model"
+             xmlns:service="clr-namespace:RecipeVault.Services">
+
     <ScrollView BackgroundColor="{StaticResource Gray100}"
                 Padding="10">
         <Border BackgroundColor="White"
@@ -80,7 +79,7 @@
                     </HorizontalStackLayout>
                 </HorizontalStackLayout>
 
-                <HorizontalStackLayout>
+                <HorizontalStackLayout Margin="0,0,0,50">
                     <HorizontalStackLayout>
                         <Label Text="Serving Size:"
                                TextColor="Black"
@@ -95,18 +94,118 @@
                                BackgroundColor="{StaticResource Gray100}"
                                Margin="0,0,20,0" />
                         <partial:MainButton ButtonText="Apply"
-                                            Command="{Binding OnServingSizeBtnClickedCommand}"/>
+                                            ButtonCommand="{Binding ServingSizeBtnClickedCommand}"/>
                     </HorizontalStackLayout>
                 </HorizontalStackLayout>
 
                 <Grid ColumnDefinitions="*,*"
-                      Grid.Row="1">
-                    <Label Text="ingredients" 
-                           Grid.Column="0"
-                           TextColor="Black"/>
-                    <Label Text="img" 
-                           Grid.Column="1"
-                           TextColor="Black"/>
+                      Margin="0,0,0,50">
+                    <VerticalStackLayout>
+                        <Label Grid.Row="0"
+                               Text="Ingredients:"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Margin="0,0,0,30"/>
+                        <CollectionView ItemsSource="{Binding SelectedRecipe.Ingredients}">
+                            <CollectionView.ItemsLayout>
+                                <GridItemsLayout Orientation="Vertical"
+                                                 Span="1"/>
+                            </CollectionView.ItemsLayout>
+
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate x:DataType="model:Ingredient">
+                                    <Grid ColumnDefinitions="auto, auto"
+                                          ColumnSpacing="15">
+                                        <Image Source="small_square_icon.png" 
+                                               WidthRequest="15"
+                                               VerticalOptions="Center"
+                                               Grid.Column="0"/>
+                                        <Label Text="{Binding FormattedIngredientInfo}" 
+                                               TextColor="Black"
+                                               FontSize="16"
+                                               Grid.Column="1"
+                                               VerticalOptions="Center"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </VerticalStackLayout>
+
+                    <Image Source="dotnet_bot.png"
+                           Grid.Column="1" />
+                </Grid>
+
+                <Grid RowDefinitions="auto,auto">
+                    <Label Grid.Row="0"
+                               Text="Instructions:"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Margin="0,0,0,30"/>
+
+                    <CollectionView ItemsSource="{Binding SelectedRecipe.Instructions}"
+                                    Grid.Row="1">
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Orientation="Vertical"
+                                             Span="1"
+                                             VerticalItemSpacing="30"/>
+                        </CollectionView.ItemsLayout>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="model:RecipeInstruction">
+                                <Grid RowDefinitions="auto,*" 
+                                      RowSpacing="10">
+                                    <HorizontalStackLayout Grid.Row="0">
+                                        <Label Text="Step"
+                                               TextColor="Black"
+                                               FontSize="20"
+                                               FontAttributes="Bold"
+                                               Margin="0,0,5,0"/>
+                                        <Label Text="{Binding Index}"
+                                               TextColor="Black"
+                                               FontSize="20"
+                                               FontAttributes="Bold"/>
+                                        <Label Text=":"
+                                               TextColor="Black"
+                                               FontSize="20"
+                                               FontAttributes="Bold"
+                                               Margin="0,0,20,0"/>
+
+                                        <FlexLayout Wrap="Wrap"
+                                                    Direction="Column"
+                                                    JustifyContent="Start"
+                                                    AlignItems="Start"
+                                                    VerticalOptions="Center"
+                                                    BindableLayout.ItemsSource="{Binding IngredientsRequired}">
+                                            <BindableLayout.ItemTemplate>
+                                                <DataTemplate x:DataType="model:InstructionIngredient">
+                                                    <Border BackgroundColor="{Binding MeasurementUnitColor}"
+                                                            StrokeShape="RoundRectangle 20"
+                                                            Stroke="{Binding MeasurementUnitColor}"
+                                                            Padding="10,5"
+                                                            Margin="0,0,5,0">
+                                                        <HorizontalStackLayout>
+                                                            <Label Text="{Binding FormattedIngredientInfo}"
+                                                                   TextColor="White"
+                                                                   FontAttributes="Bold"
+                                                                   FontSize="14" 
+                                                                   CharacterSpacing="2"/>
+                                                        </HorizontalStackLayout>
+                                                    </Border>
+                                                </DataTemplate>
+                                            </BindableLayout.ItemTemplate>
+                                        </FlexLayout>
+                                    </HorizontalStackLayout>
+                                    <Label Text="{Binding Details}"
+                                           Grid.Row="1"
+                                           TextColor="Black"
+                                           FontSize="20"
+                                           LineBreakMode="WordWrap"/>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </VerticalStackLayout>
         </Border>

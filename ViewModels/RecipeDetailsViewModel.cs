@@ -10,6 +10,7 @@ using RecipeVault.Services;
 
 namespace RecipeVault.ViewModels
 {
+
     public partial class RecipeDetailsViewModel : ObservableObject, IQueryAttributable
     {
         [ObservableProperty]
@@ -20,6 +21,7 @@ namespace RecipeVault.ViewModels
             // Notify the UI that these properties have changed
             OnPropertyChanged(nameof(FormattedPrepTime));
             OnPropertyChanged(nameof(FormattedCookTime));
+            //OnPropertyChanged(nameof(RecipeImages));
         }
 
         public string FormattedPrepTime
@@ -50,6 +52,15 @@ namespace RecipeVault.ViewModels
             }
         }
 
+        //public List<ImageSource> RecipeImages
+        //{
+        //    get
+        //    {
+        //        DataService dataService = new DataService();
+        //        return dataService.GetRecipeImages(SelectedRecipe.Gallery);
+        //    }
+        //}
+
         //  Handle parameter when it contains complex objects
         //  Use when [QueryProperty] fails to process it
         public void ApplyQueryAttributes(IDictionary<string, object> query)
@@ -61,7 +72,7 @@ namespace RecipeVault.ViewModels
         }
 
         [RelayCommand]
-        private async Task OnServingSizeBtnClicked()
+        async Task ServingSizeBtnClicked()
         {
             await Application.Current.MainPage.DisplayAlert("Button Clicked", "The custom button was tapped!", "OK");
         }

@@ -48,6 +48,7 @@
 		<MauiImage Include="Resources\Icons\level_slider_icon.svg" />
 		<MauiImage Include="Resources\Icons\list_view_icon.svg" />
 		<MauiImage Include="Resources\Icons\setting_icon.svg" />
+		<MauiImage Include="Resources\Icons\small_square_icon.svg" />
 		<MauiImage Include="Resources\Icons\timer_icon.svg" />
 
 		<!-- Splash Screen -->
@@ -69,6 +70,7 @@
 	  <None Remove="Resources\Icons\list_view_icon.svg" />
 	  <None Remove="Resources\Icons\menu_icon.svg" />
 	  <None Remove="Resources\Icons\setting_icon.svg" />
+	  <None Remove="Resources\Icons\small_square_icon.svg" />
 	  <None Remove="Resources\Icons\timer_icon.svg" />
 	</ItemGroup>
 

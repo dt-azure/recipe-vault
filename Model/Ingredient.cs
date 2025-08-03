@@ -13,12 +13,24 @@ namespace RecipeVault.Model
         public MeasuringUnit MeasuringUnit { get; set; }
         public double Quantity { get; set; }
         public string Note { get; set; }
-         public string Symbol
+        public string Symbol
         {
             get
             {
                 MeasuringUnitHelper helper = new MeasuringUnitHelper();
                 return helper.GetUnitSymbol(MeasuringUnit, Quantity);
+            }
+        }
+
+        public string FormattedIngredientInfo
+        {
+            get
+            {
+                string note = Note == "" ? "" : $" - {Note}";
+
+                string symbol = Symbol == "" ? Symbol : $" {Symbol}";
+
+                return $"{System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(Name)}: {Quantity}{symbol}{note}";
             }
         }
 

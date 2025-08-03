@@ -11,7 +11,7 @@
             Margin="5"
             BackgroundColor="White">
         <VerticalStackLayout Spacing="5">
-            <Image Source="{Binding Gallery[0].Source}"
+            <Image Source="dotnet_bot.png"
                    Aspect="AspectFill"
                    HeightRequest="150"
                    WidthRequest="200"
