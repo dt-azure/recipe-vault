@@ -1,5 +1,7 @@
-﻿using System;
+﻿using RecipeVault.Services;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
@@ -13,31 +15,50 @@ namespace RecipeVault.Model
     {
         public string DateCreated { get; set; }
         public string DateLastModified { get; set; }
-        public List<Tag> Tags { get; set; }
-        public List<Ingredient> Ingredients { get; set; }
+        public ObservableCollection<Tag> Tags { get; set; }
+        public ObservableCollection<Ingredient> Ingredients { get; set; }
         public int ServingSize { get; set; }
+        public int OriginalServingSize { get; set; }
         //Time in seconds
         public int PrepTime { get; set; }
         public int CookTime { get; set; }
         public Difficulty Difficulty { get; set; }
-        public List<RecipeImage> Gallery { get; set; }
+        public ObservableCollection<RecipeImage> Gallery { get; set; }
         public bool Hidden { get; set; }
-        public List<RecipeInstruction> Instructions { get; set; }
+        public ObservableCollection<RecipeInstruction> Instructions { get; set; }
+
+        public string FormattedPrepTime
+        {
+            get
+            {
+                Utilities utilities = new Utilities();
+                return utilities.FormatRecipeTime(PrepTime);
+            }
+        }
+
+        public string FormattedCookTime
+        {
+            get
+            {
+                Utilities utilities = new Utilities();
+                return utilities.FormatRecipeTime(CookTime);
+            }
+        }
 
 
         public Recipe(string name, string desc, int servingSize, int prepTime, int cookTime, Difficulty difficulty) : base(name, desc)
         {
             DateCreated = DateTime.Now.ToString();
             DateLastModified = DateCreated;
-            Tags = new List<Tag>();
-            Ingredients = new List<Ingredient>();
+            Tags = new ObservableCollection<Tag>();
+            Ingredients = new ObservableCollection<Ingredient>();
             ServingSize = servingSize;
             PrepTime = prepTime;
             CookTime = cookTime;
             Difficulty = difficulty;
-            Gallery = new List<RecipeImage>();
+            Gallery = new ObservableCollection<RecipeImage>();
             Hidden = false;
-            Instructions = new List<RecipeInstruction>();
+            Instructions = new ObservableCollection<RecipeInstruction>();
         }
 
         public Recipe(string name, int servingSize, int prepTime, int cookTime, Difficulty difficulty) : this(name, "", servingSize, prepTime, cookTime, difficulty)

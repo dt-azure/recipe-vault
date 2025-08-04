@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RecipeVault.ViewPartials.Sidebar">
+             x:Class="RecipeVault.ViewPartials.Sidebar"
+             xmlns:viewmodel="clr-namespace:RecipeVault.ViewModels"
+             x:DataType="viewmodel:MainPageViewModel">
+
     <Grid RowDefinitions="Auto,Auto,Auto,*" 
           WidthRequest="100" Padding="0,20,0,0" 
           BackgroundColor="{StaticResource White}">
@@ -10,16 +13,25 @@
 
         <VerticalStackLayout Spacing="40" Grid.Row="2">
             <Border Style="{StaticResource SidebarItemHighlight}">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateToMainPageCommand}" />
+                </Border.GestureRecognizers>
+                
                 <Image Source="card_view_icon.png"
                        WidthRequest="28"
                        HorizontalOptions="Center" />
             </Border>
             <Border Style="{StaticResource SidebarItemHighlight}">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateToRecipeListPageCommand}" />
+                </Border.GestureRecognizers>
+                
                 <Image Source="list_view_icon.png"
                        WidthRequest="30"
                        HorizontalOptions="Center"/>
             </Border>
         </VerticalStackLayout>
+        
         <VerticalStackLayout Grid.Row="3"
                              VerticalOptions="End"
                              Padding="0,0,0,40">

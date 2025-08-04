@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecipeVault.ViewPartials.FilterSortArea"
+             xmlns:viewmodel="clr-namespace:RecipeVault.ViewModels"
+             x:DataType="viewmodel:MainPageViewModel">
+    <HorizontalStackLayout Padding="20" Spacing="15">
+
+        <Label Text="Sort Options" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
+
+        <HorizontalStackLayout Spacing="10">
+            <Picker Title="Sort By"
+                    TitleColor="Black"
+                    ItemsSource="{Binding SortCriteria}"
+                    SelectedItem="{Binding SelectedSortCriteria}"
+                    WidthRequest="150" 
+                    BackgroundColor="{StaticResource Gray100}"
+                    TextColor="{StaticResource Gray400}"/>
+
+            <Picker Title="Sort Order"
+                    TitleColor="Black"
+                    ItemsSource="{Binding SortOrder}"
+                    SelectedItem="{Binding SelectedSortOrder}"
+                    WidthRequest="150" 
+                    BackgroundColor="{StaticResource Gray100}"
+                    TextColor="{StaticResource Gray400}"/>
+        </HorizontalStackLayout>
+
+        <Label Text="Filter Options" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
+
+        <HorizontalStackLayout Spacing="10">
+            <Picker Title="Filter by Tag"
+                    TitleColor="Black"
+                    ItemsSource="{Binding RecipeTags}"
+                    ItemDisplayBinding="{Binding Name}"
+                    SelectedItem="{Binding SelectedTag}"
+                    WidthRequest="150" 
+                    BackgroundColor="{StaticResource Gray100}"
+                    TextColor="{StaticResource Gray400}"/>
+
+            <Picker Title="Filter by Difficulty"
+                    TitleColor="Black"
+                    ItemsSource="{Binding RecipeDifficulties}"
+                    SelectedItem="{Binding SelectedDifficulty}"
+                    WidthRequest="150" 
+                    BackgroundColor="{StaticResource Gray100}"
+                    TextColor="{StaticResource Gray400}"/>
+        </HorizontalStackLayout>
+
+        <Button Text="Apply" 
+                Command="{Binding ApplyFilterAndSortCommand}" 
+                HorizontalOptions="Fill"
+                Style="{StaticResource ButtonHover2}"/>
+
+        <Button Text="Reset" 
+                Command="{Binding ResetFilterAndSortCommand}" 
+                HorizontalOptions="Fill"
+                Style="{StaticResource ButtonHover3}"/>
+
+    </HorizontalStackLayout>
+</ContentView>

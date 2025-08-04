@@ -13,7 +13,7 @@ namespace RecipeVault.Model
         Advanced
     }
 
-    public enum MeasuringUnitCategory
+    public enum MeasurementUnitCategory
     {
         Volume,
         Weight,
@@ -23,7 +23,7 @@ namespace RecipeVault.Model
         //Other
     }
 
-    public enum MeasuringUnit
+    public enum MeasurementUnit
     {
         None,
         Teaspoon,
@@ -45,6 +45,30 @@ namespace RecipeVault.Model
         Quart,
         Gallon,
         Clove
+    }
+
+    public enum WeightMeasurementUnit
+    {
+        Teaspoon,
+        Tablespoon,
+        Cup,
+        Ounce,
+        Pound,
+        Gram,
+        Kilogram
+    }
+
+    public enum VolumeMeasurementUnit
+    {
+        Cup,
+        Milliliter,
+        Liter,
+        FluidOunce,
+        Pint,
+        Quart,
+        Gallon,
+        Teaspoon,
+        Tablespoon
     }
 
     public enum FoodType

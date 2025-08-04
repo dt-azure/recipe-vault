@@ -8,7 +8,9 @@ public partial class MainButton : ContentView
 
 	public static readonly BindableProperty ButtonCommandProperty = BindableProperty.Create(nameof(ButtonCommand), typeof(ICommand), typeof(MainButton));
 
-	public string ButtonText
+	public static readonly BindableProperty ButtonCommandParametersProperty = BindableProperty.Create(nameof(ButtonCommandParameters), typeof(object), typeof(MainButton));
+
+    public string ButtonText
 	{
 		get => (string)GetValue(ButtonTextProperty);
 		set => SetValue(ButtonTextProperty, value);
@@ -18,6 +20,12 @@ public partial class MainButton : ContentView
 	{
 		get => (ICommand)GetValue(ButtonCommandProperty);
 		set => SetValue(ButtonCommandProperty, value);
+	}
+
+	public object ButtonCommandParameters
+	{
+		get => (object)GetValue(ButtonCommandParametersProperty);
+		set => SetValue(ButtonCommandParametersProperty, value);
 	}
 
 	public MainButton()

@@ -11,15 +11,7 @@ namespace RecipeVault.Model
     {
         public string DateAdded { get; set; }
         public string Source { get; set; }
-        public ImageSource SourceImage
-        {
-            get
-            {
-                DataService dataService = new DataService();
-                return dataService.ConvertBase64ToImg(Source);
-
-            }
-        }
+        public ImageSource SourceImage { get; set; }
 
         public RecipeImage(string name, string desc, string source) : base(name, desc) 
         {

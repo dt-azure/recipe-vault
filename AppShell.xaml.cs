@@ -10,6 +10,8 @@ namespace RecipeVault
 
             //  Register the pages with Shell's routing system
             Routing.RegisterRoute(nameof(RecipeDetailsPage), typeof(RecipeDetailsPage));
+            //Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
+            //Routing.RegisterRoute(nameof(RecipeListPage), typeof(RecipeListPage));
         }
     }
 }

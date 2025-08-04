@@ -8,7 +8,10 @@
     <CollectionView ItemsSource="{Binding Recipes}"
                     SelectionMode="None">
         <CollectionView.ItemsLayout>
-            <GridItemsLayout Orientation="Vertical" Span="3"/>
+            <GridItemsLayout Orientation="Vertical" 
+                             Span="3"
+                             HorizontalItemSpacing="10"
+                             VerticalItemSpacing="6"/>
         </CollectionView.ItemsLayout>
 
         <CollectionView.ItemTemplate>

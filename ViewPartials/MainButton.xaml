@@ -5,7 +5,8 @@
              x:Name="MainButtonContentView">
     <Button Text="{Binding Source={x:Reference MainButtonContentView}, Path=ButtonText}"
             Style="{StaticResource ButtonHover2}"
-            Command="{Binding Source={x:Reference MainButtonContentView}, Path=ButtonCommand}">
+            Command="{Binding Source={x:Reference MainButtonContentView}, Path=ButtonCommand}"
+            CommandParameter="{Binding Source={x:Reference MainButtonContentView}, Path=ButtonCommandParameters}">
         
     </Button>
 </ContentView>

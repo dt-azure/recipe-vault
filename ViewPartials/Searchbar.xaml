@@ -3,17 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RecipeVault.ViewPartials.Searchbar"
              xmlns:vm="clr-namespace:RecipeVault.ViewModels"
-             x:DataType="vm:SearchbarViewModel">
+             x:DataType="vm:MainPageViewModel">
     <Grid ColumnDefinitions="*,Auto" 
           Padding="15">
         <Entry Placeholder="Enter keywords you want to look for"
            Text="{Binding SearchQuery}" 
+           TextColor="{StaticResource Gray400}"
            ClearButtonVisibility="WhileEditing"
-           Margin="0,0,5,0"/>
+           Margin="0,0,5,0"
+           ReturnType="Search"
+           Completed="SearchEntryCompleted" />
+        
         <Button Grid.Column="1" 
             Text="Search" 
             Style="{StaticResource ButtonHover}" 
             FontAttributes="Bold"
-            FontSize="16"/>
+            FontSize="16"
+            Command="{Binding ApplyFilterAndSortCommand}"/>
     </Grid>
 </ContentView>

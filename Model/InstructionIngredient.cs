@@ -9,23 +9,9 @@ using Color = Microsoft.Maui.Graphics.Color;
 
 namespace RecipeVault.Model
 {
-    public class InstructionIngredient
+    public class InstructionIngredient : Ingredient
     {
-        public string Name { get; set; }
-        public MeasuringUnitCategory MeasuringUnitCategory { get; set; }
-        public MeasuringUnit MeasuringUnit { get; set; }
-        public double Quantity { get; set; }
-
-        public string Symbol
-        {
-            get
-            {
-                MeasuringUnitHelper helper = new MeasuringUnitHelper();
-                return helper.GetUnitSymbol(MeasuringUnit, Quantity);
-            }
-        }
-
-        public string FormattedIngredientInfo
+        public override string FormattedIngredientInfo
         {
             get
             {
@@ -40,25 +26,18 @@ namespace RecipeVault.Model
         {
             get
             {
-                MeasuringUnitHelper helper = new MeasuringUnitHelper();
-                return helper.GetMeasurementGroupColor(MeasuringUnitCategory);
+                MeasurementUnitHelper helper = new MeasurementUnitHelper();
+                return helper.GetMeasurementGroupColor(MeasurementUnitCategory);
             }
         }
 
-        public InstructionIngredient(string name, MeasuringUnitCategory category, MeasuringUnit measuringUnit, double quantity)
+        public InstructionIngredient(string name, MeasurementUnitCategory category, MeasurementUnit measurementUnit, double quantity) : base(name, category, measurementUnit)
         {
-            Name = name;
-            MeasuringUnitCategory = category;
-            MeasuringUnit = measuringUnit;
             Quantity = quantity;
         }
 
-        public InstructionIngredient(Ingredient ingredient, double quantity)
+        public InstructionIngredient(Ingredient ingredient, double quantity) : this(ingredient.Name, ingredient.MeasurementUnitCategory, ingredient.MeasurementUnit, quantity)
         {
-            Name = ingredient.Name;
-            MeasuringUnitCategory = ingredient.MeasuringUnitCategory;
-            MeasuringUnit = ingredient.MeasuringUnit;
-            Quantity = quantity;
         }
 
         public InstructionIngredient(Ingredient ingredient) : this(ingredient, ingredient.Quantity)

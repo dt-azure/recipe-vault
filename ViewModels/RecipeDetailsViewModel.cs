@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,53 +14,32 @@ namespace RecipeVault.ViewModels
 
     public partial class RecipeDetailsViewModel : ObservableObject, IQueryAttributable
     {
+
         [ObservableProperty]
-        private Recipe _selectedRecipe;
+        private Recipe selectedRecipe;
 
-        partial void OnSelectedRecipeChanged(Recipe value)
-        {
-            // Notify the UI that these properties have changed
-            OnPropertyChanged(nameof(FormattedPrepTime));
-            OnPropertyChanged(nameof(FormattedCookTime));
-            //OnPropertyChanged(nameof(RecipeImages));
-        }
+        [ObservableProperty]
+        private string newServingSize;
 
-        public string FormattedPrepTime
-        {
-            get
-            {
-                if (SelectedRecipe == null)
-                {
-                    return string.Empty;
-                }
+        public ObservableCollection<string> WeightMeasurementUnits { get; set; }
 
-                DataService dataService = new DataService();
-                return dataService.FormatRecipeTime(SelectedRecipe.PrepTime);
-            }
-        }
+        [ObservableProperty]
+        private string selectedWeightMeasurementUnitSource;
 
-        public string FormattedCookTime
-        {
-            get
-            {
-                if (SelectedRecipe == null)
-                {
-                    return string.Empty;
-                }
+        [ObservableProperty]
+        private string selectedWeightMeasurementUnitTarget;
 
-                DataService dataService = new DataService();
-                return dataService.FormatRecipeTime(SelectedRecipe.CookTime);
-            }
-        }
+        [ObservableProperty]
+        private string selectedVolumeMeasurementUnitSource;
 
-        //public List<ImageSource> RecipeImages
-        //{
-        //    get
-        //    {
-        //        DataService dataService = new DataService();
-        //        return dataService.GetRecipeImages(SelectedRecipe.Gallery);
-        //    }
-        //}
+        [ObservableProperty]
+        private string selectedVolumeMeasurementUnitTarget;
+
+        public ObservableCollection<string> VolumeMeasurementUnits { get; set; }
+
+        [ObservableProperty]
+        private string selectedVolumeMeasurementUnit;
+
 
         //  Handle parameter when it contains complex objects
         //  Use when [QueryProperty] fails to process it
@@ -68,13 +48,109 @@ namespace RecipeVault.ViewModels
             if (query.TryGetValue("SelectedRecipe", out var recipeObject) && recipeObject is Recipe recipe)
             {
                 SelectedRecipe = recipe;
+                SelectedRecipe.OriginalServingSize = SelectedRecipe.ServingSize;
+
+                foreach (Ingredient ingredient in SelectedRecipe.Ingredients)
+                {
+                    ingredient.OriginalQuantity = ingredient.Quantity;
+                    ingredient.OriginalMeasurementUnit = ingredient.MeasurementUnit;
+                }    
+
+                foreach (RecipeInstruction instruction in SelectedRecipe.Instructions)
+                {
+                    foreach (Ingredient ingredient in instruction.IngredientsRequired)
+                    {
+                        ingredient.OriginalQuantity = ingredient.Quantity;
+                        ingredient.OriginalMeasurementUnit = ingredient.MeasurementUnit;
+                    }
+                }    
             }
         }
 
-        [RelayCommand]
-        async Task ServingSizeBtnClicked()
+        public RecipeDetailsViewModel()
         {
-            await Application.Current.MainPage.DisplayAlert("Button Clicked", "The custom button was tapped!", "OK");
+            Utilities utilities = new Utilities();
+            WeightMeasurementUnits = new ObservableCollection<string>(utilities.ConvertEnumToStringList<WeightMeasurementUnit>());
+            VolumeMeasurementUnits = new ObservableCollection<string>(utilities.ConvertEnumToStringList<VolumeMeasurementUnit>());
+        }
+
+        [RelayCommand]
+        private void ServingSizeBtnClicked()
+        {
+            if (SelectedRecipe == null || string.IsNullOrWhiteSpace(NewServingSize))
+            {
+                return;
+            }
+
+            int newServingSize;
+
+            //  Check if valid integer
+            if (!int.TryParse(NewServingSize, out newServingSize))
+            {
+                return;
+            }
+
+            double scaling = (double)newServingSize / SelectedRecipe.OriginalServingSize;
+
+            foreach (Ingredient ingredient in SelectedRecipe.Ingredients)
+            {
+                ingredient.Quantity = ingredient.OriginalQuantity * scaling;
+            }
+
+            foreach (RecipeInstruction instruction in SelectedRecipe.Instructions)
+            {
+                foreach (Ingredient ingredient in instruction.IngredientsRequired)
+                {
+                    ingredient.Quantity = ingredient.OriginalQuantity * scaling;
+                }
+            }
+
+            SelectedRecipe.ServingSize = newServingSize;
+        }
+
+        [RelayCommand]
+        private void ConvertMeasurementUnit(MeasurementUnitCategory category)
+        {
+            MeasurementUnitConverter converter = new MeasurementUnitConverter();
+            MeasurementUnitHelper helper = new MeasurementUnitHelper();
+            MeasurementUnit source;
+            MeasurementUnit target;
+
+            if (category == MeasurementUnitCategory.Weight)
+            {
+                source = helper.GetUnitEnum(SelectedWeightMeasurementUnitSource);
+                target = helper.GetUnitEnum(SelectedWeightMeasurementUnitTarget);
+            } else
+            {
+                source = helper.GetUnitEnum(SelectedVolumeMeasurementUnitSource);
+                target = helper.GetUnitEnum(SelectedVolumeMeasurementUnitTarget);
+            }
+
+            if (source == target)
+            {
+                return;
+            }
+
+            foreach (Ingredient ingredient in SelectedRecipe.Ingredients)
+            {
+                if (ingredient.MeasurementUnit == source && ingredient.MeasurementUnitCategory == category)
+                {
+                    ingredient.Quantity = converter.Convert(ingredient.OriginalQuantity, category, ingredient.OriginalMeasurementUnit, target);
+                    ingredient.MeasurementUnit = target;
+                }
+            }
+
+            foreach (RecipeInstruction instruction in SelectedRecipe.Instructions)
+            {
+                foreach (Ingredient ingredient in instruction.IngredientsRequired)
+                {
+                    if (ingredient.MeasurementUnit == source && ingredient.MeasurementUnitCategory == category)
+                    {
+                        ingredient.Quantity = converter.Convert(ingredient.OriginalQuantity, category, ingredient.OriginalMeasurementUnit, target);
+                        ingredient.MeasurementUnit = target;
+                    }
+                }
+            }
         }
     }
 }

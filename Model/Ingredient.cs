@@ -1,4 +1,5 @@
-﻿using RecipeVault.Services;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using RecipeVault.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,22 +8,34 @@ using System.Threading.Tasks;
 
 namespace RecipeVault.Model
 {
-    public class Ingredient : AppObject
+    public partial class Ingredient : AppObject
     {
-        public MeasuringUnitCategory MeasuringUnitCategory { get; set; }
-        public MeasuringUnit MeasuringUnit { get; set; }
-        public double Quantity { get; set; }
+        public MeasurementUnitCategory MeasurementUnitCategory { get; set; }
+
+        [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(Symbol))]
+        [NotifyPropertyChangedFor(nameof(FormattedIngredientInfo))]
+        private MeasurementUnit measurementUnit;
+
+        [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(Symbol))]
+        [NotifyPropertyChangedFor(nameof(FormattedIngredientInfo))]
+        private double quantity;
+
+        public double OriginalQuantity { get; set; }
+        public MeasurementUnit OriginalMeasurementUnit { get; set; }
+
         public string Note { get; set; }
         public string Symbol
         {
             get
             {
-                MeasuringUnitHelper helper = new MeasuringUnitHelper();
-                return helper.GetUnitSymbol(MeasuringUnit, Quantity);
+                MeasurementUnitHelper helper = new MeasurementUnitHelper();
+                return helper.GetUnitSymbol((MeasurementUnit)MeasurementUnit, Quantity);
             }
         }
 
-        public string FormattedIngredientInfo
+        public virtual string FormattedIngredientInfo
         {
             get
             {
@@ -30,21 +43,23 @@ namespace RecipeVault.Model
 
                 string symbol = Symbol == "" ? Symbol : $" {Symbol}";
 
-                return $"{System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(Name)}: {Quantity}{symbol}{note}";
+                string quantity = Quantity == 0 ? "" : Math.Round(Quantity, 3).ToString();
+
+                return $"{System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(Name)}: {quantity}{symbol}{note}";
             }
         }
 
 
-        public Ingredient(string name, string desc, MeasuringUnitCategory measuringUnitCategory, MeasuringUnit measuringUnit, string note) : base(name, desc)
+        public Ingredient(string name, string desc, MeasurementUnitCategory measurementUnitCategory, MeasurementUnit measurementUnit, string note) : base(name, desc)
         {
-            MeasuringUnitCategory = measuringUnitCategory;
-            MeasuringUnit = measuringUnit;
+            MeasurementUnitCategory = measurementUnitCategory;
+            MeasurementUnit = measurementUnit;
             Note = note;
         }
 
-        public Ingredient(string name, MeasuringUnitCategory measuringUnitCategory, MeasuringUnit measuringUnit, string note) : this(name, string.Empty, measuringUnitCategory, measuringUnit, note) { }
+        public Ingredient(string name, MeasurementUnitCategory measurementUnitCategory, MeasurementUnit measurementUnit, string note) : this(name, string.Empty, measurementUnitCategory, measurementUnit, note) { }
 
-        public Ingredient(string name, MeasuringUnitCategory measuringUnitCategory, MeasuringUnit measuringUnit) : this(name, string.Empty, measuringUnitCategory, measuringUnit, string.Empty) { }
+        public Ingredient(string name, MeasurementUnitCategory measurementUnitCategory, MeasurementUnit measurementUnit) : this(name, string.Empty, measurementUnitCategory, measurementUnit, string.Empty) { }
 
         public Ingredient() { }
     }

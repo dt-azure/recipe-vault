@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RecipeVault.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,16 @@ namespace RecipeVault.Model
 {
     public class Tag : AppObject
     {
-        public TagColor TagColor { get; }
+        public TagColor TagColor { get; set; }
+
+        public Color TagColorConverted
+        {
+            get
+            {
+                Utilities utilities = new Utilities();
+                return utilities.GetTagColor(TagColor);
+            }
+        }
 
         public Tag(string name, string desc, TagColor color) : base(name, desc)
         {
