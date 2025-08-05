@@ -90,6 +90,7 @@ namespace RecipeVault.ViewModels
         public async Task LoadRecipesAsync()
         {
             Recipes.Clear();
+            _backupRecipeList.Clear();
 
             try
             {
