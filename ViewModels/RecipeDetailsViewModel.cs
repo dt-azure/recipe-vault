@@ -135,7 +135,7 @@ namespace RecipeVault.ViewModels
             {
                 if (ingredient.MeasurementUnit == source && ingredient.MeasurementUnitCategory == category)
                 {
-                    ingredient.Quantity = converter.Convert(ingredient.OriginalQuantity, category, ingredient.OriginalMeasurementUnit, target);
+                    ingredient.Quantity = converter.Convert(ingredient.Quantity, category, ingredient.OriginalMeasurementUnit, target);
                     ingredient.MeasurementUnit = target;
                 }
             }
