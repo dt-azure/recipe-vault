@@ -3,20 +3,21 @@ namespace RecipeVault
 {
     public partial class MainPage : ContentPage
     {
-        private MainPageViewModel _viewModel;
-
-        public MainPage()
+        public MainPage(MainPageViewModel viewModel)
         {
             InitializeComponent();
-            _viewModel = new MainPageViewModel();
-            this.BindingContext = _viewModel;
+
+            this.BindingContext = viewModel;
         }
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
 
-            await _viewModel.LoadRecipesAsync();
+            if (BindingContext is MainPageViewModel viewModel)
+            {
+                await viewModel.LoadRecipesAsync();
+            }
         }
     }
 }

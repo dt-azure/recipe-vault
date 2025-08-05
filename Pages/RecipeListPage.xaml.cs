@@ -4,20 +4,21 @@ namespace RecipeVault.Pages;
 
 public partial class RecipeListPage : ContentPage
 {
-	private MainPageViewModel _viewModel;
 
-	public RecipeListPage()
+	public RecipeListPage(MainPageViewModel viewModel)
 	{
 		InitializeComponent();
 
-		_viewModel = new MainPageViewModel();
-		this.BindingContext = _viewModel;
+		this.BindingContext = viewModel;
 	}
 
     protected override async void OnAppearing()
     {
         base.OnAppearing();
 
-        await _viewModel.LoadRecipesAsync();
+        if (BindingContext is MainPageViewModel viewModel)
+        {
+            await viewModel.LoadRecipesAsync();
+        }
     }
 }
