@@ -171,10 +171,10 @@ namespace RecipeVault.ViewModels
             //  Search
             filteredAndSortedList =  Search(filteredAndSortedList);
 
-
+            //  Filter
             if (SelectedTag != null)
             {
-                filteredAndSortedList = filteredAndSortedList.Where(recipe => recipe.Tags.Contains(SelectedTag));
+                filteredAndSortedList = filteredAndSortedList.Where(recipe => recipe.Tags.Any(tag => tag.Name == SelectedTag.Name));
             }
 
             if (SelectedDifficulty.HasValue)
@@ -182,6 +182,7 @@ namespace RecipeVault.ViewModels
                 filteredAndSortedList = filteredAndSortedList.Where(recipe => recipe.Difficulty == SelectedDifficulty.Value);
             }
 
+            // Sort
             if (!string.IsNullOrEmpty(SelectedSortCriteria))
             {
                 bool isAsc = SelectedSortOrder == "Ascending";
