@@ -104,6 +104,7 @@ namespace RecipeVault.Model
         MiddleEastern,
         Filipino,
         American,
+        Russian,
         None
     }
 
